@@ -27,10 +27,17 @@ class PipelineOutputs:
 
 def load_debt_stack(path: Path) -> pd.DataFrame:
     debt = pd.read_csv(path)
+    parsed_dates = pd.Series(pd.NaT, index=debt.index, dtype="datetime64[ns]")
+    non_demand = ~debt["maturity_date"].eq("On demand")
+    parsed_dates.loc[non_demand] = pd.to_datetime(
+        debt.loc[non_demand, "maturity_date"],
+        format="%Y-%m-%d",
+        errors="coerce",
+    )
     debt["maturity_year"] = np.where(
         debt["maturity_date"].eq("On demand"),
         BASE_YEAR,
-        pd.to_datetime(debt["maturity_date"]).dt.year,
+        parsed_dates.dt.year,
     ).astype(int)
     debt["fixed_coupon_decimal"] = debt["fixed_coupon_decimal"].astype(float)
     debt["spread_decimal"] = debt["spread_decimal"].astype(float)
