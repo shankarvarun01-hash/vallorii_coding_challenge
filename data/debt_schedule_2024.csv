@@ -1,0 +1,23 @@
+instrument_id,category,counterparty,notional_mn_gbp,coupon_descriptor,rate_type,fixed_coupon_decimal,spread_decimal,maturity_date,assumption_note
+RP-01,Loans with related parties,related_party,255.0,Base + 1.00%,floating_proxy,,0.0100,On demand,On-demand balances are treated as maturing in 2025 for annual modelling
+RP-02,Loans with related parties,related_party,64.0,Base + 0.3507%,floating_proxy,,0.003507,On demand,On-demand balances are treated as maturing in 2025 for annual modelling
+RP-03,Loans with related parties,related_party,3.0,Base + 1.00%,floating_proxy,,0.0100,On demand,On-demand balances are treated as maturing in 2025 for annual modelling
+RP-04,Loans with related parties,related_party,700.0,SONIA + CAS + 0.75%,floating_proxy,,0.0075,2025-01-31,
+RP-05,Loans with related parties,related_party,500.0,4.106%,fixed,0.04106,,2025-08-01,
+RP-06,Loans with related parties,related_party,380.0,SONIA + CAS + 0.78%,floating_proxy,,0.0078,2027-12-20,Amount uses 2024 non-current + current columns
+RP-07,Loans with related parties,related_party,800.0,SONIA + CAS + 0.56%,floating_proxy,,0.0056,2029-05-22,
+RP-08,Loans with related parties,related_party,500.0,4.454%,fixed,0.04454,,2029-08-01,
+RP-09,Loans with related parties,related_party,500.0,SONIA + 1.21%,floating_proxy,,0.0121,2030-12-20,
+RP-10,Loans with related parties,related_party,500.0,SONIA + CAS + 0.69%,floating_proxy,,0.0069,2031-02-22,
+RP-11,Loans with related parties,related_party,800.0,4.3835%,fixed,0.043835,,2032-03-30,
+RP-12,Loans with related parties,related_party,300.0,SONIA + 1.75%,floating_proxy,,0.0175,2032-07-29,
+RP-13,Loans with related parties,related_party,500.0,3.745%,fixed,0.03745,,2032-08-01,
+RP-14,Loans with related parties,related_party,700.0,SONIA + 1.43%,floating_proxy,,0.0143,2033-12-20,
+RP-15,Loans with related parties,related_party,600.0,5.358%,fixed,0.05358,,2034-10-31,
+RP-16,Loans with related parties,related_party,815.0,SONIA + 1.47%,floating_proxy,,0.0147,2035-10-21,
+EXT-01,Loans payable to external counterparties,external,350.0,5.875%,fixed,0.05875,,2026-07-17,
+EXT-02,Loans payable to external counterparties,external,349.0,4.875%,fixed,0.04875,,2027-09-20,
+EXT-03,Loans payable to external counterparties,external,60.0,4.6%,fixed,0.046,,2029-07-27,
+EXT-04,Loans payable to external counterparties,external,344.0,2.0%,fixed,0.02,,2031-11-13,
+EXT-05,Loans payable to external counterparties,external,50.0,5.75%,fixed,0.0575,,2039-12-09,
+EXT-06,Loans payable to external counterparties,external,100.0,6.375%,fixed,0.06375,,2041-05-31,
