@@ -1,0 +1,385 @@
+from_node,to_node,amount_usd_m,stage
+Adaptation Fund,grant,208.727381,actor_to_instrument
+African Development Bank,other,4190.37396941341,actor_to_instrument
+Arab Fund (AFESD) / Arab Fund,debt,16.955196,actor_to_instrument
+Arab Fund (AFESD) / Arab Fund,grant,1.5403136000000002,actor_to_instrument
+Arcadia / Arcadia Fund,grant,42.675999600000004,actor_to_instrument
+Asian Development Bank,debt,28960.617036406922,actor_to_instrument
+Asian Development Bank,equity,181.52895347,actor_to_instrument
+Asian Development Bank,grant,1403.69696484794,actor_to_instrument
+Asian Development Bank,other,4.0695,actor_to_instrument
+Australia / Australian Government,debt,1.7677796000000001,actor_to_instrument
+Australia / Australian Government,equity,4.6,actor_to_instrument
+Australia / Australian Government,grant,948.6341786,actor_to_instrument
+Austria / Austrian Development Agency,grant,83.5275698,actor_to_instrument
+Austria / Austrian Development Bank,debt,232.9357776,actor_to_instrument
+Austria / Austrian Development Bank,equity,124.08508,actor_to_instrument
+Austria / Austrian Development Bank,grant,0.4876498,actor_to_instrument
+"Austria / FM of Education, Science and Research",grant,0.4427014,actor_to_instrument
+Austria / Federal Chancellery,grant,0.3243944,actor_to_instrument
+Austria / Federal Government of Austria,grant,3.2439448,actor_to_instrument
+Austria / Federal Ministry for European and International Affairs,grant,0.046414,actor_to_instrument
+"Austria / Federal Ministry of Agriculture, Regions and Tourism",grant,1.2976716000000001,actor_to_instrument
+"Austria / Federal Ministry of Climate Action, Environment, Energy, Mobility, Innovation and Technology",grant,69.6654116,actor_to_instrument
+Austria / Federal Ministry of Finance,grant,34.7066804,actor_to_instrument
+Austria / Federal Ministry of Finance,other,3.219424,actor_to_instrument
+"Austria / Provincial governments, local communities",grant,1.2181386,actor_to_instrument
+Austria / Various ministries,grant,0.2054944,actor_to_instrument
+Belgium / Belgian Investment Company for Developing Countries,debt,83.8898214,actor_to_instrument
+Belgium / Belgian Investment Company for Developing Countries,equity,26.4398392,actor_to_instrument
+Belgium / Directorate General for Co-operation and Development,debt,5.1903116,actor_to_instrument
+Belgium / Directorate General for Co-operation and Development,grant,350.7610186,actor_to_instrument
+Belgium / Flanders Official Regional Ministries,grant,25.9495958,actor_to_instrument
+Belgium / Other Official Federal Services,grant,1.0813148000000001,actor_to_instrument
+Bezos Earth Fund,grant,5.00488,actor_to_instrument
+Bloomberg Family Foundation,grant,25.601126400000002,actor_to_instrument
+CGIAR,grant,122.2062774,actor_to_instrument
+Canada / Environment and Climate Change Canada,grant,79.3275978,actor_to_instrument
+Canada / FinDev Canada,debt,40.346978,actor_to_instrument
+Canada / FinDev Canada,equity,1.2275924,actor_to_instrument
+Canada / Global Affairs Canada,debt,473.5062446,actor_to_instrument
+Canada / Global Affairs Canada,grant,596.9759566,actor_to_instrument
+"Canada / Immigration, Refugees and Citizenship Canada",grant,0.4379564,actor_to_instrument
+Canada / International Development Research Centre,grant,31.3417842,actor_to_instrument
+Canada / Miscellaneous,grant,7.0197086,actor_to_instrument
+Canada / Provincial Governments and municipalities,grant,7.9570338,actor_to_instrument
+Central Emergency Response Fund / Rapid Response,grant,35.2532,actor_to_instrument
+Central Emergency Response Fund / Under Funded,grant,10.136000000000001,actor_to_instrument
+Children's Investment Fund Foundation,grant,107.695321,actor_to_instrument
+Council of Europe Development Bank / Council of Europe Development Bank (CEB),debt,359.7657874,actor_to_instrument
+Croatia / Croatian Bank for Reconstruction and Development,grant,0.0028272,actor_to_instrument
+Croatia / Ministry of Foreign and European Affairs,grant,0.5478568,actor_to_instrument
+Czechia / Czech Development Agency,grant,9.6567306,actor_to_instrument
+Czechia / Ministry of Environment,grant,0.11421800000000001,actor_to_instrument
+Czechia / Ministry of Foreign Affairs,grant,5.8762736,actor_to_instrument
+Czechia / Ministry of Industry and Trade,grant,0.043337,actor_to_instrument
+Czechia / Ministry of Interior,grant,0.2619712,actor_to_instrument
+David and Lucile Packard Foundation / David & Lucile Packard Foundation,debt,1.6,actor_to_instrument
+David and Lucile Packard Foundation / David & Lucile Packard Foundation,equity,0.7250736,actor_to_instrument
+David and Lucile Packard Foundation / David & Lucile Packard Foundation,grant,150.4253346,actor_to_instrument
+Denmark / Investment Fund For Developing Countries,debt,93.2577184,actor_to_instrument
+Denmark / Investment Fund For Developing Countries,equity,62.1080934,actor_to_instrument
+Denmark / Ministry of Foreign Affairs,grant,814.4976446000001,actor_to_instrument
+Denmark / Ministry of Foreign Affairs,other,20.757127,actor_to_instrument
+Dutch Postcode Lottery,grant,30.538761800000003,actor_to_instrument
+EU Institutions / European Commission,grant,8641.5722298,actor_to_instrument
+Estonia / Local Authorites,grant,0.043262,actor_to_instrument
+Estonia / Ministry of Foreign Affairs,grant,0.0776444,actor_to_instrument
+Estonia / Other Ministries,grant,3.099672,actor_to_instrument
+Estonia / Other Public Sector Institutions,grant,0.3629234,actor_to_instrument
+European Bank for Reconstruction and Development ,debt,4620.72082,actor_to_instrument
+European Bank for Reconstruction and Development ,equity,88.884,actor_to_instrument
+European Bank for Reconstruction and Development ,guarantee,27.0325,actor_to_instrument
+European Bank for Reconstruction and Development ,other,296.13077999999996,actor_to_instrument
+European Investment Bank,debt,148840.4454938923,actor_to_instrument
+European Investment Bank,equity,2378.8413424519954,actor_to_instrument
+European Investment Bank,guarantee,8322.99753657719,actor_to_instrument
+Finland / FinnFund,debt,34.87541,actor_to_instrument
+Finland / FinnFund,equity,72.9188894,actor_to_instrument
+Finland / Finnish Government,grant,0.07299900000000001,actor_to_instrument
+Finland / Ministry of Foreign Affairs,grant,119.6701914,actor_to_instrument
+Finland / Ministry of Foreign Affairs,other,1.081315,actor_to_instrument
+Fondation Botnar / Botnar Foundation,equity,1.624689,actor_to_instrument
+Fondation Botnar / Botnar Foundation,grant,2.4932172,actor_to_instrument
+Food and Agriculture Organisation / Core resources - developmental,grant,42.989533800000004,actor_to_instrument
+Ford Foundation,grant,27.486304,actor_to_instrument
+France / CIRAD,grant,24.5260368,actor_to_instrument
+France / COOP DECENTRAL/MAE,grant,21.1414818,actor_to_instrument
+France / French Development Agency,debt,7954.28554,actor_to_instrument
+France / French Development Agency,grant,897.1375136,actor_to_instrument
+France / IRD,grant,5.1413244,actor_to_instrument
+France / Interdepartmental,grant,0.056252,actor_to_instrument
+France / MIN/EQUIPEMENT,grant,4.183034800000001,actor_to_instrument
+France / MIN/SANTE,grant,0.45853160000000004,actor_to_instrument
+France / MINEFI/NATEXIS,debt,216.2629756,actor_to_instrument
+France / MINEFI/NATEXIS,grant,8.9844142,actor_to_instrument
+France / Ministry of Agriculture,grant,0.2568204,actor_to_instrument
+"France / Ministry of Economy, Finance and Industry",grant,75.1396802,actor_to_instrument
+"France / Ministry of Education, Higher education and Research",grant,0.9679774,actor_to_instrument
+France / Ministry of Foreign Affairs,grant,108.8874894,actor_to_instrument
+France / Miscellaneous,grant,2.4722352,actor_to_instrument
+France / Proparco,debt,1799.2618332,actor_to_instrument
+France / Proparco,equity,146.8634646,actor_to_instrument
+France / Proparco,grant,39.388587599999994,actor_to_instrument
+France / STOA,equity,88.7570852,actor_to_instrument
+Gates Foundation / Bill & Melinda Gates Foundation,grant,299.116124,actor_to_instrument
+German Postcode Lottery,grant,1.373308,actor_to_instrument
+Germany / Deutsche Investitions- und Entwicklungsgesellschaft mbH (German Investment and Development Company),debt,776.8103148,actor_to_instrument
+Germany / Deutsche Investitions- und Entwicklungsgesellschaft mbH (German Investment and Development Company),equity,8.433076400000001,actor_to_instrument
+Germany / Federal Foreign Office,grant,102.61041680000001,actor_to_instrument
+Germany / Federal Ministry for Digital and Transport,grant,0.22946260000000002,actor_to_instrument
+Germany / Federal Ministry for Economic Affairs and Climate Action,equity,23.0555044,actor_to_instrument
+Germany / Federal Ministry for Economic Affairs and Climate Action,grant,1557.1180592,actor_to_instrument
+Germany / Federal Ministry for Economic Cooperation and Development,debt,473.1194264,actor_to_instrument
+Germany / Federal Ministry for Economic Cooperation and Development,equity,223.1970966,actor_to_instrument
+Germany / Federal Ministry for Economic Cooperation and Development,grant,4561.3578696,actor_to_instrument
+"Germany / Federal Ministry for the Enviroment, Nature Conservation, Nuclear Safety and Consumer Protection",grant,27.1755338,actor_to_instrument
+Germany / Federal Ministry of Education and Research,grant,55.1908744,actor_to_instrument
+Germany / Federal Ministry of Finance,debt,46.1119292,actor_to_instrument
+Germany / Federal Ministry of Finance,grant,19.850483,actor_to_instrument
+Germany / Federal Ministry of Food and Agriculture,grant,25.218062800000002,actor_to_instrument
+Germany / Federal Ministry of Health,grant,42.0547294,actor_to_instrument
+Germany / Free Hanseatic City of Bremen,grant,0.0863404,actor_to_instrument
+Germany / Free State of Bavaria,grant,9.2246522,actor_to_instrument
+Germany / Free State of Saxony,grant,0.21050400000000002,actor_to_instrument
+Germany / Free and Hanseatic City of Hamburg,grant,3.7854294000000004,actor_to_instrument
+Germany / KfW Bankengruppe (KfW banking group),debt,6253.473602,actor_to_instrument
+Germany / Land Baden-Württemberg,grant,1.3151676,actor_to_instrument
+Germany / Land Berlin,grant,0.148394,actor_to_instrument
+Germany / Land Brandenburg,grant,0.1968,actor_to_instrument
+Germany / Land Hesse,grant,0.7088048,actor_to_instrument
+Germany / Land Lower-Saxony,grant,0.2159156,actor_to_instrument
+Germany / Land North Rhine-Westphalia,grant,4.279574,actor_to_instrument
+Germany / Land Rhineland-Palatinate,grant,0.0043252,actor_to_instrument
+Germany / Land Saarland,grant,0.0293256,actor_to_instrument
+Germany / Land Schleswig-Holstein,grant,0.2475824,actor_to_instrument
+Global Environment Facility / GEF Trust Fund,debt,41.062465,actor_to_instrument
+Global Environment Facility / GEF Trust Fund,equity,27.57,actor_to_instrument
+Global Environment Facility / GEF Trust Fund,grant,1562.0146338,actor_to_instrument
+Global Environment Facility / Global Biodiversity Framework Fund (GBFF),grant,15.304,actor_to_instrument
+Global Environment Facility / Least Developed Countries Trust Fund (LDCF),grant,128.600356,actor_to_instrument
+Global Environment Facility / Special Climate Change Trust Fund (SCCF),grant,14.967521999999999,actor_to_instrument
+Good Ventures Foundation,grant,3.2768,actor_to_instrument
+Gordon and Betty Moore Foundation,grant,29.536832800000003,actor_to_instrument
+Greece / Ministry of National Defense,grant,0.009680600000000001,actor_to_instrument
+Hungary / Hungarian Export Import Bank PLC,debt,10.0,actor_to_instrument
+Hungary / Ministry of Energy,grant,0.036804,actor_to_instrument
+Hungary / Ministry of Foreign Affairs and Trade,grant,1.1165522,actor_to_instrument
+Hungary / Miscellaneous,grant,0.10090640000000001,actor_to_instrument
+IKEA Foundation,grant,148.29319660000002,actor_to_instrument
+IMF Resilience and Sustainability Trust,debt,3374.5611428,actor_to_instrument
+Iceland / Ministry of Finance,grant,0.19849840000000002,actor_to_instrument
+Iceland / Ministry of Foreign Affairs,grant,27.95863,actor_to_instrument
+Inter American Development Bank,other,22021.3104689572,actor_to_instrument
+"International Centre for Genetic Engineering and Biotechnology / ICGEB Core, developmental",grant,0.0074470000000000005,actor_to_instrument
+International Labour Organisation / Regular Budget,grant,0.6012028,actor_to_instrument
+International Labour Organisation / Regular Budget Supplementary Account,grant,0.4231012,actor_to_instrument
+International Labour Organisation / Regular Budget Technical Cooperation,grant,0.09099560000000001,actor_to_instrument
+"Ireland / Department of Agriculture, Food and the Marine",grant,11.3010184,actor_to_instrument
+Ireland / Department of Foreign Affairs,grant,258.3084554,actor_to_instrument
+Ireland / Miscellaneous,grant,5.7905052,actor_to_instrument
+Italy / Agenzia italiana per la cooperazione allo sviluppo,grant,239.4238138,actor_to_instrument
+Italy / Cassa Depositi e Prestiti,debt,96.1939648,actor_to_instrument
+Italy / Central administration,grant,0.3906948,actor_to_instrument
+Italy / Earmarked fiscal flows to NGOs,grant,0.034662,actor_to_instrument
+Italy / Earmarked fiscal flows to NGOs & religious organisations,grant,3.0709246,actor_to_instrument
+Italy / Earmarked fiscal flows to religious organisations,grant,1.5155982,actor_to_instrument
+Italy / Local administration - Municipalities and metropolitan cities,grant,0.0645438,actor_to_instrument
+Italy / Local administration - Regions and autonomous provinces,grant,1.221858,actor_to_instrument
+Italy / Local administration - Unspecified,grant,0.7650156,actor_to_instrument
+Italy / Ministry of Economy and Finance,grant,4.326224,actor_to_instrument
+"Italy / Ministry of Economy and Finance funds, administered by CDP",debt,156.824573,actor_to_instrument
+Italy / Ministry of Environment and Energy Security,grant,76.2410276,actor_to_instrument
+"Italy / Ministry of Environment and Energy Security, funds administered by CDP",debt,408.54207199999996,actor_to_instrument
+Italy / Ministry of Foreign Affairs and International Cooperation,grant,3.1458414,actor_to_instrument
+Italy / Public universities and research institutes and Italian red cross,grant,1.4798608,actor_to_instrument
+Italy / Third Party funds administered by CDP,debt,35.4671278,actor_to_instrument
+Japan / Japanese International Co-operation Agency,debt,16090.7836348,actor_to_instrument
+Japan / Japanese International Co-operation Agency,equity,1604.0680368,actor_to_instrument
+Japan / Japanese International Co-operation Agency,grant,229.69849200000002,actor_to_instrument
+"Japan / Ministry of Agriculture, Forestry and Fisheries",grant,8.473416,actor_to_instrument
+Japan / Ministry of Foreign Affairs,grant,517.7480380000001,actor_to_instrument
+Japan / Ordinance-designed Cities,grant,0.007614,actor_to_instrument
+Japan / Other Ministries,grant,182.62333180000002,actor_to_instrument
+Japan / Prefectures,grant,0.06662960000000001,actor_to_instrument
+John D. and Catherine T. MacArthur Foundation / John & Catherine MacArthur Foundation,debt,2.0,actor_to_instrument
+John D. and Catherine T. MacArthur Foundation / John & Catherine MacArthur Foundation,grant,27.644,actor_to_instrument
+Joint Sustainable Development Goals Fund,grant,2.74987,actor_to_instrument
+Korea / Export-Import Bank of Korea,debt,3771.969071,actor_to_instrument
+Korea / Korea International Cooperation Agency,grant,347.4870038,actor_to_instrument
+Korea / Ministry of Foreign Affairs and Trade,grant,39.6336564,actor_to_instrument
+Korea / Ministry of Strategy and Finance,grant,14.360653,actor_to_instrument
+Korea / Miscellaneous,grant,190.0361348,actor_to_instrument
+La Caixa Banking Foundation,grant,0.7159852,actor_to_instrument
+Latvia / Ministry of Foreign Affairs,grant,0.2932088,actor_to_instrument
+Latvia / Other ministries and institutions,grant,0.045115600000000006,actor_to_instrument
+Laudes Foundation,grant,33.053553,actor_to_instrument
+Leona M. and Harry B. Helmsley Charitable Trust,grant,2.557944,actor_to_instrument
+Liechtenstein / Ministry of Foreign Affairs,grant,6.4594696,actor_to_instrument
+Lithuania / Ministry of Agriculture,grant,0.0092788,actor_to_instrument
+Lithuania / Ministry of Environment,grant,5.231021,actor_to_instrument
+Lithuania / Ministry of Finance,grant,0.1730292,actor_to_instrument
+Lithuania / Ministry of Foreign Affairs,grant,0.1614162,actor_to_instrument
+Lithuania / Ministry of National Defense,grant,7.43024,actor_to_instrument
+Luxembourg / Ministry of Foreign and European Affairs,grant,44.898104000000004,actor_to_instrument
+Margaret A. Cargill Foundation,grant,3.665,actor_to_instrument
+Monaco / Government of Monaco,grant,2.04018,actor_to_instrument
+Netherlands / Dutch Good Growth Fund – Financing Local SMEs,equity,11.761041,actor_to_instrument
+Netherlands / Ministry of Foreign Affairs of the Netherlands,grant,2082.6898196,actor_to_instrument
+New Zealand / Ministry of Foreign Affairs and Trade,grant,443.165369,actor_to_instrument
+Nordic Development Fund,debt,16.2,actor_to_instrument
+Nordic Development Fund,equity,23.5,actor_to_instrument
+Nordic Development Fund,grant,61.287171,actor_to_instrument
+Norway / Ministry of Climate and Environment,grant,276.34175700000003,actor_to_instrument
+Norway / Ministry of Foreign Affairs,grant,460.5912042,actor_to_instrument
+Norway / NORFUND,debt,302.1099726,actor_to_instrument
+Norway / NORFUND,equity,559.9704702,actor_to_instrument
+Norway / NORFUND,grant,2.1395024,actor_to_instrument
+Norway / Norwegian Agency for Development Co-operation,grant,847.409222,actor_to_instrument
+Norway / Norwegian Agency for Exchange Cooperation,grant,2.4397784,actor_to_instrument
+Norwegian Postcode Lottery,grant,3.8921460000000003,actor_to_instrument
+OPEC Fund for International Development / OPEC Fund,debt,270.0,actor_to_instrument
+Oak Foundation,grant,32.3996424,actor_to_instrument
+Open Society Foundations,grant,20.652560400000002,actor_to_instrument
+People's Postcode Lottery,grant,20.4766384,actor_to_instrument
+Poland / Ministry of Climate and Environment,grant,0.117118,actor_to_instrument
+Poland / Ministry of Foreign Affairs,grant,5.719619600000001,actor_to_instrument
+Poland / Ministry of Interior and Administration,grant,0.42063700000000004,actor_to_instrument
+Poland / Miscellaneous,grant,0.1261312,actor_to_instrument
+Portugal / Camões-Institute for Cooperation and Language,grant,6.7760406,actor_to_instrument
+Portugal / Camões-Institute for Cooperation and Language,other,0.02251,actor_to_instrument
+Portugal / Portuguese Government,grant,4.7742376,actor_to_instrument
+Private Infrastructure Development Group / Emerging Africa Infrastructure Fund,debt,302.96,actor_to_instrument
+Private Infrastructure Development Group / GAP,grant,12.415882,actor_to_instrument
+Private Infrastructure Development Group / InfraCo Africa,equity,52.3,actor_to_instrument
+Private Infrastructure Development Group / InfraCo Asia,equity,13.8,actor_to_instrument
+Qatar / Ministry of Foreign Affairs,grant,1.850696,actor_to_instrument
+Qatar / Qatar Fund for Development,grant,4.9590852,actor_to_instrument
+Qatar / Qatar University,grant,0.06618840000000001,actor_to_instrument
+Romania / ROAID,grant,0.017984,actor_to_instrument
+Slovak Republic / Other ministries,grant,0.009569,actor_to_instrument
+Slovak Republic / Slovak Agency for International Deve (SAMRS),grant,2.5453618000000002,actor_to_instrument
+Slovenia / Ministry of Defence,grant,0.010813200000000002,actor_to_instrument
+Slovenia / Ministry of Finance,grant,4.1402766,actor_to_instrument
+Slovenia / Ministry of Foreign and European Affairs,grant,0.8005652000000001,actor_to_instrument
+"Slovenia / Ministry of the Economy, Tourism and Sport",grant,0.25794480000000003,actor_to_instrument
+"Slovenia / Ministry of the Environment, Climate and Energy",grant,1.3291038,actor_to_instrument
+Slovenia / Miscellaneous,grant,0.23746000000000003,actor_to_instrument
+Spain / Compañía Española de Financiación del Desarrollo,debt,45.563311,actor_to_instrument
+Spain / Comunidad Autónoma de Andalucía,grant,3.6160224000000003,actor_to_instrument
+Spain / Comunidad Autónoma de Aragón,grant,0.0551562,actor_to_instrument
+Spain / Comunidad Autónoma de Cantabria,grant,0.4543526,actor_to_instrument
+Spain / Comunidad Autónoma de Castilla-La Mancha,grant,0.11125639999999999,actor_to_instrument
+Spain / Comunidad Autónoma de Cataluña,grant,2.4228796,actor_to_instrument
+Spain / Comunidad Autónoma de Extremadura,grant,1.3869578,actor_to_instrument
+Spain / Comunidad Autónoma de Galicia,grant,2.0415392,actor_to_instrument
+Spain / Comunidad Autónoma de La Rioja,grant,0.16739720000000002,actor_to_instrument
+Spain / Comunidad Autónoma de la Región de Murcia,grant,0.04560120000000001,actor_to_instrument
+Spain / Comunidad Autónoma de las Illes Balears,grant,1.0299186,actor_to_instrument
+Spain / Comunidad Autónoma del País Vasco o de Euskadi,grant,0.021626400000000004,actor_to_instrument
+Spain / Comunidad Foral de Navarra,grant,2.0394066,actor_to_instrument
+Spain / Comunidad Valenciana,grant,9.0427488,actor_to_instrument
+Spain / Comunidad de Castilla y León,grant,1.3659196,actor_to_instrument
+Spain / Comunidad de Madrid,grant,0.3365994,actor_to_instrument
+"Spain / Ministry of Agriculture, Fisheries, and Food",grant,0.05428260000000001,actor_to_instrument
+Spain / Ministry of Economy and Business,grant,42.61211,actor_to_instrument
+Spain / Ministry of Foreign Affairs and Co-operation,debt,16.219723,actor_to_instrument
+Spain / Ministry of Foreign Affairs and Co-operation,grant,0.633155,actor_to_instrument
+Spain / Ministry of Public Works,grant,0.0774504,actor_to_instrument
+Spain / Ministry of the Environment and Rural and Marine Environs,grant,28.5218262,actor_to_instrument
+Spain / Municipalities,grant,6.4115718,actor_to_instrument
+Spain / Public Universities,grant,1.6764064,actor_to_instrument
+Spain / Spanish Agency for International Development Co-operation,grant,87.4728858,actor_to_instrument
+Sweden / Ministry of Foreign Affairs,grant,9.0497618,actor_to_instrument
+Sweden / Miscellaneous,grant,1.3711696,actor_to_instrument
+Sweden / SwedFund,debt,47.9622496,actor_to_instrument
+Sweden / SwedFund,equity,131.6242614,actor_to_instrument
+Sweden / SwedFund,grant,9.7990254,actor_to_instrument
+Sweden / Swedish Civil Contingencies Agency,grant,0.049180800000000004,actor_to_instrument
+Sweden / Swedish International Development Authority,grant,526.1749538,actor_to_instrument
+Swedish Postcode Lottery,grant,8.7680072,actor_to_instrument
+Switzerland / Cantons and municipalities,grant,5.748351400000001,actor_to_instrument
+Switzerland / Federal Administration (various departments),grant,0.5231238,actor_to_instrument
+Switzerland / Federal Office for the Environment,grant,1.6267852,actor_to_instrument
+Switzerland / State Secretariat for Economic Affairs,grant,195.9319222,actor_to_instrument
+Switzerland / Swiss Agency for Development and Co-operation,grant,325.8781298,actor_to_instrument
+Switzerland / Swiss Investment Fund for Emerging Markets,debt,7.2,actor_to_instrument
+Switzerland / Swiss Investment Fund for Emerging Markets,equity,70.0,actor_to_instrument
+Thailand / Ministry of Foreign Affairs,grant,0.036529,actor_to_instrument
+"Thailand / Ministry of Higher Education, Science, Research and Innovation",grant,0.012558,actor_to_instrument
+Türkiye,grant,0.72593,actor_to_instrument
+Türkiye / Miscellaneous,grant,0.110646,actor_to_instrument
+UBS Optimus Foundation,grant,10.7561482,actor_to_instrument
+UN Capital Development Fund / UNCDF,grant,0.004772200000000001,actor_to_instrument
+UN Economic and Social Commission for Western Asia / ESCWA - United Nations Economic and Social Commission for Western Asia,grant,0.6805947999999999,actor_to_instrument
+UN Peacebuilding Fund / UNPBF,grant,4.694497,actor_to_instrument
+UNDP,grant,20.504239000000002,actor_to_instrument
+UNECE,grant,0.007609,actor_to_instrument
+UNEP / Environment Fund,grant,10.947519000000002,actor_to_instrument
+UNEP / Multilateral Fund under the Montreal Protocol on Substances that Deplete the Ozone Layer,grant,91.32575899999999,actor_to_instrument
+UNFPA,grant,6.568312000000001,actor_to_instrument
+UNICEF,grant,0.9540000000000001,actor_to_instrument
+UNRWA,grant,3.4395392,actor_to_instrument
+United Arab Emirates / Abu Dhabi Fund for Development,debt,30.0,actor_to_instrument
+United Arab Emirates / Abu Dhabi Fund for Development,grant,49.759105000000005,actor_to_instrument
+United Kingdom / British International Investment,debt,476.490066,actor_to_instrument
+United Kingdom / British International Investment,equity,1317.1814458000001,actor_to_instrument
+United Kingdom / Conflict stability and security fund,grant,10.5149196,actor_to_instrument
+"United Kingdom / Department for Business, Innovation and Skills",grant,84.543526,actor_to_instrument
+"United Kingdom / Department for Culture, Media and Sports",grant,26.4297654,actor_to_instrument
+United Kingdom / Department for Environment Food and Rural Affairs,grant,248.37867880000002,actor_to_instrument
+United Kingdom / Department of Energy and Climate Change,grant,1030.447482,actor_to_instrument
+United Kingdom / Department of Health  and Social Care,grant,56.735019,actor_to_instrument
+"United Kingdom / Foreign, Commonwealth and Development Office",equity,176.5670596,actor_to_instrument
+"United Kingdom / Foreign, Commonwealth and Development Office",grant,2073.3513986000003,actor_to_instrument
+United Kingdom / Scottish Government,grant,17.0763078,actor_to_instrument
+United Kingdom / UK-India Tech Start-up Fund,equity,11.060239600000001,actor_to_instrument
+United Kingdom / UK-India Tech Start-up Fund,grant,0.0186828,actor_to_instrument
+United Nations Conference on Trade and Development / United Nations Conference on Trade and Development - Regular budget,grant,0.21388240000000003,actor_to_instrument
+United States / African Development Foundation,grant,0.204534,actor_to_instrument
+United States / Agency for International Development,grant,4734.1685644,actor_to_instrument
+United States / Department of Agriculture,grant,3.5491601999999998,actor_to_instrument
+United States / Department of Commerce,grant,0.15000000000000002,actor_to_instrument
+United States / Environmental Protection Agency,grant,18.992659,actor_to_instrument
+United States / International Development Finance Corporation,debt,2415.0088,actor_to_instrument
+United States / International Development Finance Corporation,equity,672.4,actor_to_instrument
+United States / International Development Finance Corporation,grant,1.2394492,actor_to_instrument
+United States / Millennium Challenge Corporation,grant,158.978846,actor_to_instrument
+United States / State Department,grant,191.245867,actor_to_instrument
+United States / Trade and Development Agency,grant,17.9161596,actor_to_instrument
+Van Leer Foundation / Bernard van Leer Foundation,grant,0.020291600000000003,actor_to_instrument
+WTO - International Trade Centre / VC unearmarked,grant,1.8102492000000001,actor_to_instrument
+Wellcome Trust,grant,53.696215,actor_to_instrument
+William and Flora Hewlett Foundation / William & Flora Hewlett Foundation,grant,113.444682,actor_to_instrument
+World Bank (IBRD/IDA),debt,122327.3979,actor_to_instrument
+World Bank (IBRD/IDA),grant,26308.5473,actor_to_instrument
+World Bank (IBRD/IDA),other,2129.9255,actor_to_instrument
+World Tourism Organisation / UNWTO-Regular Budget,grant,0.085356,actor_to_instrument
+debt,adaptation,32612.73112585723,instrument_to_objective
+debt,both,135071.51136129705,instrument_to_objective
+debt,mitigation,183845.47358234497,instrument_to_objective
+equity,adaptation,107.537722,instrument_to_objective
+equity,both,733.1558577033339,instrument_to_objective
+equity,mitigation,7264.3987548186615,instrument_to_objective
+grant,adaptation,17690.28896912,instrument_to_objective
+grant,both,30843.19122872794,instrument_to_objective
+grant,mitigation,18559.7748794,instrument_to_objective
+guarantee,adaptation,15.900299999999998,instrument_to_objective
+guarantee,both,1044.253092665973,instrument_to_objective
+guarantee,mitigation,7289.876643911217,instrument_to_objective
+other,adaptation,8195.16520615873,instrument_to_objective
+other,both,6570.186285541,instrument_to_objective
+other,mitigation,13901.53910267088,instrument_to_objective
+adaptation,agriculture_land_use,6151.321587769,objective_to_sector
+adaptation,buildings,2320.4652598000002,objective_to_sector
+adaptation,education,795.5369899631935,objective_to_sector
+adaptation,energy,1364.3953637975999,objective_to_sector
+adaptation,finance_policy,7034.3945422,objective_to_sector
+adaptation,health,3660.4088286,objective_to_sector
+adaptation,industry_mining,749.8593894570357,objective_to_sector
+adaptation,other,9773.99005936966,objective_to_sector
+adaptation,transport,12427.93140358115,objective_to_sector
+adaptation,waste,14.772923400000002,objective_to_sector
+adaptation,water,14328.54697519832,objective_to_sector
+both,agriculture_land_use,17528.532634204126,objective_to_sector
+both,buildings,5617.961890282887,objective_to_sector
+both,education,6990.952367069773,objective_to_sector
+both,energy,31058.59812649913,objective_to_sector
+both,finance_policy,11693.260141,objective_to_sector
+both,health,4903.59771123527,objective_to_sector
+both,industry_mining,3584.68025446,objective_to_sector
+both,other,19163.586379219443,objective_to_sector
+both,transport,46299.55766871992,objective_to_sector
+both,waste,33.396409,objective_to_sector
+both,water,27388.174244244732,objective_to_sector
+mitigation,agriculture_land_use,2780.11843182,objective_to_sector
+mitigation,buildings,2878.4038086710125,objective_to_sector
+mitigation,education,1343.1113717,objective_to_sector
+mitigation,energy,94164.14324246296,objective_to_sector
+mitigation,finance_policy,6024.9951184,objective_to_sector
+mitigation,health,2554.0933273354844,objective_to_sector
+mitigation,industry_mining,17352.021054805842,objective_to_sector
+mitigation,other,24949.091142427376,objective_to_sector
+mitigation,transport,73436.67603540869,objective_to_sector
+mitigation,waste,753.4204242,objective_to_sector
+mitigation,water,4624.9890059143645,objective_to_sector
