@@ -61,7 +61,7 @@ The script writes:
 
 ---
 
-## Climate finance database pipeline (OECD + World Bank + MDB/DFI)
+## Climate finance database pipeline v2 (OECD + World Bank + direct banks incl. CDB)
 
 The repository now also includes a second pipeline for building a project-level climate finance database and flow view:
 
@@ -69,7 +69,9 @@ The repository now also includes a second pipeline for building a project-level 
 - Main sources:
   - OECD CRS project-level files (official OECD bulk downloads discovered via OECD SDMX metadata).
   - World Bank project-level climate coefficient workbook.
-  - MDB/DFI project-level climate disclosures dataset (includes AsDB and other MDBs).
+  - IDB direct climate datasets (2023, 2024).
+  - AIIB direct all-project feed (filtered to climate-relevant records).
+  - CDB quarterly climate-loan disclosure PDFs (aggregate climate-lending entries).
 
 ### Install
 
@@ -89,6 +91,12 @@ Run with multiple OECD years:
 python3 src/climate_finance_pipeline.py --oecd-years 2024 2023
 ```
 
+Optional cache location:
+
+```bash
+python3 src/climate_finance_pipeline.py --cache-dir data/raw
+```
+
 ### Outputs
 
 The climate pipeline writes to `outputs/`:
@@ -98,4 +106,5 @@ The climate pipeline writes to `outputs/`:
 - `climate_finance_flow_cube.csv` (aggregated 4D flow cube)
 - `climate_finance.db` (SQLite database with project and edge tables)
 - `climate_finance_sankey.html` (interactive Sankey flow visualization)
+- `climate_finance_sankey.png` (static Sankey image)
 - `climate_finance_summary.md` (coverage, totals, top actors/sectors, methodology notes)

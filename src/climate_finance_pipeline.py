@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import io
+import json
 import re
 import sqlite3
 import xml.etree.ElementTree as ET
@@ -14,6 +15,7 @@ import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import requests
+from pypdf import PdfReader
 
 
 OECD_CRS_DATAFLOW_URL = (
@@ -21,10 +23,15 @@ OECD_CRS_DATAFLOW_URL = (
     "OECD.DCD.FSD/DSD_CRS@DF_CRS/1.5?references=all"
 )
 WORLD_BANK_COEFFICIENTS_URL = "https://devinit.github.io/media/documents/WB_with_climate_coefficients.xlsx"
-MDB_DATASET_URL = (
-    "https://www.publishwhatyoufund.org/app/uploads/dlm_uploads/2026/03/"
-    "mdb-climate-finance-dataset-2.0.xlsx"
-)
+AIIB_ALL_PROJECTS_JS_URL = "https://www.aiib.org/en/projects/list/.content/all-projects-data.js"
+IDB_2023_CLIMATE_CSV_URL = "https://data.iadb.org/file/download/5f463558-6c7f-41ac-9ab9-6b08bc0e3df5"
+IDB_2024_CLIMATE_CSV_URL = "https://data.iadb.org/file/download/bc40fafc-4241-4d9a-afe6-e28a56a17697"
+# CDB publishes quarterly climate-loan disclosures as PDFs.
+CDB_DISCLOSURE_PDFS = {
+    "2024Q1": "https://www.cdb.com.cn/xwzx/xxgg/qtgg/202407/W020240729639508752090.pdf",
+    "2024Q3": "https://www.cdb.com.cn/xwzx/xxgg/qtgg/202501/W020250113626252031243.pdf",
+    "2025Q1": "https://www.cdb.cn/xwzx/xxgg/qtgg/202506/W020250618525732514513.pdf",
+}
 
 
 SECTOR_KEYWORDS: dict[str, tuple[str, ...]] = {
@@ -192,6 +199,42 @@ def map_text_instrument(text: pd.Series) -> pd.Series:
         ["grant", "equity", "guarantee", "debt"],
         default="other",
     )
+
+
+def coalesce_columns(df: pd.DataFrame, columns: list[str], default: object = np.nan) -> pd.Series:
+    available = [col for col in columns if col in df.columns]
+    if not available:
+        return pd.Series([default] * len(df), index=df.index)
+    out = df[available[0]]
+    for col in available[1:]:
+        out = out.where(out.notna(), df[col])
+    return out
+
+
+def coalesce_duplicate_columns(df: pd.DataFrame) -> pd.DataFrame:
+    if not df.columns.duplicated().any():
+        return df
+    unique_names = pd.Index(df.columns).unique()
+    out = pd.DataFrame(index=df.index)
+    for name in unique_names:
+        matches = np.where(df.columns == name)[0]
+        if len(matches) == 1:
+            out[name] = df.iloc[:, matches[0]]
+            continue
+        series = df.iloc[:, matches[0]]
+        for pos in matches[1:]:
+            series = series.where(series.notna(), df.iloc[:, pos])
+        out[name] = series
+    return out
+
+
+def extract_first_float(text: str) -> float | None:
+    if text is None:
+        return None
+    m = re.search(r"-?\d[\d,]*(?:\.\d+)?", str(text))
+    if not m:
+        return None
+    return float(m.group(0).replace(",", ""))
 
 
 def discover_oecd_crs_urls(session: requests.Session) -> dict[int, str]:
@@ -422,73 +465,257 @@ def load_world_bank_projects(session: requests.Session, cache_dir: Path) -> pd.D
     return out
 
 
-def load_mdb_projects(session: requests.Session, cache_dir: Path) -> pd.DataFrame:
-    xlsx_path = download_to_cache(
-        session,
-        MDB_DATASET_URL,
-        cache_dir / "mdb" / "mdb-climate-finance-dataset-2.0.xlsx",
+def load_idb_projects(session: requests.Session, cache_dir: Path) -> pd.DataFrame:
+    files = [
+        ("2023", IDB_2023_CLIMATE_CSV_URL, cache_dir / "idb" / "idb_2023_climate.csv"),
+        ("2024", IDB_2024_CLIMATE_CSV_URL, cache_dir / "idb" / "idb_2024_climate.csv"),
+    ]
+    frames: list[pd.DataFrame] = []
+    for _, url, path in files:
+        csv_path = download_to_cache(session, url, path)
+        frames.append(pd.read_csv(csv_path))
+    idb = pd.concat(frames, ignore_index=True)
+    idb = idb.rename(columns=lambda c: str(c).strip())
+
+    # Normalize column variants across years.
+    col_map = {
+        "Instrument Type (1)": "instrument_type",
+        "Instrument Type": "instrument_type",
+        "Project Number": "project_number",
+        "Project Name": "project_name",
+        "Country": "country",
+        "Approval Year": "approval_year",
+        "Approved Amount": "approved_amount",
+        "Original Approved Amount": "approved_amount",
+        "Use": "use",
+        "Mitigation sector": "mitigation_sector",
+        "Mitigation Sector": "mitigation_sector",
+        "Adaptation sector": "adaptation_sector",
+        "Adaptation Sector": "adaptation_sector",
+        "US$ Mitigation": "usd_mitigation",
+        "US$ Adaptation": "usd_adaptation",
+        "US$ Dual-use": "usd_dual",
+        "Climate Finance Amount": "usd_total_cf",
+        "CF": "usd_total_cf",
+    }
+    idb = idb.rename(columns={k: v for k, v in col_map.items() if k in idb.columns})
+    # Coalesce duplicate normalized columns produced by 2023 vs 2024 schema variants.
+    idb = coalesce_duplicate_columns(idb)
+
+    for col in ["usd_mitigation", "usd_adaptation", "usd_dual", "usd_total_cf", "approved_amount"]:
+        if col not in idb.columns:
+            idb[col] = np.nan
+        if isinstance(idb[col], pd.DataFrame):
+            idb[col] = idb[col].bfill(axis=1).iloc[:, 0]
+        idb[col] = (
+            idb[col]
+            .astype(str)
+            .str.replace(r"[\$, ]", "", regex=True)
+            .replace({"-": np.nan, "nan": np.nan, "None": np.nan, "": np.nan})
+        )
+        idb[col] = pd.to_numeric(idb[col], errors="coerce")
+
+    idb["usd_mitigation"] = idb["usd_mitigation"].fillna(0.0)
+    idb["usd_adaptation"] = idb["usd_adaptation"].fillna(0.0)
+    idb["usd_dual"] = idb["usd_dual"].fillna(0.0)
+    idb["usd_total_cf"] = idb["usd_total_cf"].fillna(idb["usd_mitigation"] + idb["usd_adaptation"] + idb["usd_dual"])
+    idb = idb[idb["usd_total_cf"] > 0].copy()
+    if idb.empty:
+        return pd.DataFrame()
+
+    objective = np.where(
+        idb["usd_dual"] > 0,
+        "both",
+        np.where(idb["usd_mitigation"] > 0, "mitigation", np.where(idb["usd_adaptation"] > 0, "adaptation", "none")),
     )
-    mdb = pd.read_excel(xlsx_path, sheet_name="1. Enriched Dataset")
-    mdb = mdb.rename(columns=lambda c: str(c).strip())
-
-    climate_amount = pd.to_numeric(mdb["Climate finance ($ million)"], errors="coerce").fillna(0.0)
-    mdb = mdb[climate_amount > 0].copy()
-    if mdb.empty:
-        return pd.DataFrame()
-
-    # Keep ADB and other MDBs/DFIs, while avoiding overlap with dedicated WB source.
-    mdb = mdb[~mdb["MDB"].fillna("").astype(str).str.contains(r"\bWB\b|World Bank", case=False, regex=True)].copy()
-    if mdb.empty:
-        return pd.DataFrame()
-
-    climate_amount = pd.to_numeric(mdb["Climate finance ($ million)"], errors="coerce").fillna(0.0)
-    mitigation = pd.to_numeric(mdb["Mitigation ($ million)"], errors="coerce").fillna(0.0)
-    adaptation = pd.to_numeric(mdb["Adaptation ($ million)"], errors="coerce").fillna(0.0)
-    objective = infer_objective(mitigation, adaptation)
-    objective_text = mdb["Type"].fillna("").astype(str).str.lower()
-    objective = np.where(objective_text.str.contains("dual|both"), "both", objective)
-    objective = np.where(objective_text.str.contains("mitig"), "mitigation", objective)
-    objective = np.where(objective_text.str.contains("adapt"), "adaptation", objective)
-
+    idb = idb[objective != "none"].copy()
+    objective = np.where(
+        idb["usd_dual"] > 0,
+        "both",
+        np.where(idb["usd_mitigation"] > 0, "mitigation", "adaptation"),
+    )
     objective_amount = np.where(
         objective == "both",
-        climate_amount,
-        np.where(objective == "mitigation", mitigation, adaptation),
+        idb["usd_dual"],
+        np.where(objective == "mitigation", idb["usd_mitigation"], idb["usd_adaptation"]),
     )
 
-    instrument = map_text_instrument(mdb["Investment instrument"].fillna("").astype(str))
-    sector_text = (
-        mdb["Sector 1"].fillna("").astype(str)
-        + " "
-        + mdb["Sector 2"].fillna("").astype(str)
-        + " "
-        + mdb["Mitigation sector"].fillna("").astype(str)
-        + " "
-        + mdb["Adaptation sector"].fillna("").astype(str)
+    sector_text = idb["mitigation_sector"].fillna("").astype(str) + " " + idb["adaptation_sector"].fillna("").astype(str)
+    out = pd.DataFrame(
+        {
+            "source_dataset": "IDB_CLIMATE_DATA_DIRECT",
+            "source_url": np.where(
+                pd.to_numeric(idb["approval_year"], errors="coerce").fillna(0).astype(int) >= 2024,
+                IDB_2024_CLIMATE_CSV_URL,
+                IDB_2023_CLIMATE_CSV_URL,
+            ),
+            "actor": "Inter-American Development Bank",
+            "project_id": "IDB-" + idb["project_number"].fillna("").astype(str),
+            "project_name": idb["project_name"].fillna("").astype(str),
+            "country": idb["country"].fillna("Unspecified").astype(str),
+            "year": pd.to_numeric(idb["approval_year"], errors="coerce"),
+            "instrument": map_text_instrument(idb["instrument_type"].fillna("").astype(str)),
+            "objective": objective,
+            "sector": sector_text.map(map_sector),
+            "raw_sector": sector_text,
+            "raw_instrument": idb["instrument_type"].fillna("").astype(str),
+            "commitment_amount_usd_m": pd.to_numeric(idb["approved_amount"], errors="coerce") / 1_000_000.0,
+            "climate_amount_usd_m": objective_amount / 1_000_000.0,
+            "mitigation_amount_usd_m": np.where(objective == "mitigation", idb["usd_mitigation"] / 1_000_000.0, 0.0),
+            "adaptation_amount_usd_m": np.where(objective == "adaptation", idb["usd_adaptation"] / 1_000_000.0, 0.0),
+            "both_amount_usd_m": np.where(objective == "both", idb["usd_dual"] / 1_000_000.0, 0.0),
+        }
+    )
+    return out
+
+
+def parse_aiib_project_js(text: str) -> list[dict]:
+    m = re.search(r"var\s+data\s*=\s*(\[.*\])\s*;", text, re.S)
+    if not m:
+        return []
+    payload = m.group(1)
+    payload = re.sub(r",\s*]", "]", payload)
+    payload = re.sub(r",\s*}", "}", payload)
+    return json.loads(payload)
+
+
+def parse_aiib_funding_musd(value: str) -> float:
+    text = str(value or "").strip()
+    if not text:
+        return 0.0
+    # Examples: "USD500 million", "USD266.64 million"
+    match = re.search(r"USD\s*([\d,]+(?:\.\d+)?)\s*million", text, flags=re.I)
+    if match:
+        return float(match.group(1).replace(",", ""))
+    number = extract_first_float(text)
+    return float(number) if number is not None else 0.0
+
+
+def load_aiib_projects(session: requests.Session, cache_dir: Path) -> pd.DataFrame:
+    js_path = download_to_cache(session, AIIB_ALL_PROJECTS_JS_URL, cache_dir / "aiib" / "all-projects-data.js")
+    text = js_path.read_text(encoding="utf-8", errors="ignore")
+    records = parse_aiib_project_js(text)
+    if not records:
+        return pd.DataFrame()
+
+    aiib = pd.DataFrame(records)
+    aiib["approved_musd"] = aiib["approved_funding"].map(parse_aiib_funding_musd)
+    aiib["committed_musd"] = aiib["committed_funding"].map(parse_aiib_funding_musd)
+    aiib["proposed_musd"] = aiib["proposed_funding"].map(parse_aiib_funding_musd)
+    aiib["climate_flag"] = (
+        aiib["name"].fillna("").str.contains(
+            r"climate|renewable|solar|wind|hydro|green|resilience|adaptation|mitigation|emission|water|flood|transport|rail|metro|energy",
+            case=False,
+            regex=True,
+        )
+        | aiib["sector"].fillna("").str.contains(
+            r"energy|transport|water|climate|multi-sector|environment",
+            case=False,
+            regex=True,
+        )
+    )
+    aiib = aiib[aiib["climate_flag"]].copy()
+    if aiib.empty:
+        return pd.DataFrame()
+
+    aiib["year"] = pd.to_numeric(aiib["date"].astype(str).str.extract(r"(\d{4})")[0], errors="coerce")
+    aiib["amount_musd"] = np.where(aiib["approved_musd"] > 0, aiib["approved_musd"], aiib["committed_musd"])
+    aiib["amount_musd"] = np.where(aiib["amount_musd"] > 0, aiib["amount_musd"], aiib["proposed_musd"])
+    aiib = aiib[aiib["amount_musd"] > 0].copy()
+    if aiib.empty:
+        return pd.DataFrame()
+
+    objective = np.where(
+        aiib["name"].str.contains(r"adapt|resilien|flood", case=False, regex=True)
+        & aiib["name"].str.contains(r"mitig|renewable|solar|wind|energy efficiency|emission", case=False, regex=True),
+        "both",
+        np.where(
+            aiib["name"].str.contains(r"adapt|resilien|flood", case=False, regex=True),
+            "adaptation",
+            "mitigation",
+        ),
     )
 
     out = pd.DataFrame(
         {
-            "source_dataset": "MDB_PUBLIC_DISCLOSURES",
-            "source_url": MDB_DATASET_URL,
-            "actor": mdb["MDB"].fillna("Unspecified").astype(str),
-            "project_id": "MDB-" + mdb["MDB"].fillna("").astype(str) + "-" + mdb["Project ID"].fillna("").astype(str),
-            "project_name": mdb["Project name"].fillna("").astype(str),
-            "country": mdb["Country"].fillna("Unspecified").astype(str),
-            "year": pd.to_numeric(mdb["Approval / reporting year"], errors="coerce"),
-            "instrument": instrument,
+            "source_dataset": "AIIB_DIRECT_PROJECT_LIST",
+            "source_url": AIIB_ALL_PROJECTS_JS_URL,
+            "actor": "Asian Infrastructure Investment Bank",
+            "project_id": "AIIB-" + aiib["path"].fillna("").astype(str),
+            "project_name": aiib["name"].fillna("").astype(str).str.strip(),
+            "country": aiib["economy"].fillna("Unspecified").astype(str),
+            "year": aiib["year"],
+            "instrument": map_text_instrument(aiib["financing_type"].fillna("").astype(str)),
             "objective": objective,
-            "sector": sector_text.map(map_sector),
-            "raw_sector": mdb["Sector 1"].fillna("").astype(str),
-            "raw_instrument": mdb["Investment instrument"].fillna("").astype(str),
-            "commitment_amount_usd_m": pd.to_numeric(mdb["Total commitment ($ million)"], errors="coerce"),
-            "climate_amount_usd_m": objective_amount,
-            "mitigation_amount_usd_m": mitigation.where(objective == "mitigation", 0.0),
-            "adaptation_amount_usd_m": adaptation.where(objective == "adaptation", 0.0),
-            "both_amount_usd_m": climate_amount.where(objective == "both", 0.0),
+            "sector": aiib["sector"].fillna("").map(map_sector),
+            "raw_sector": aiib["sector"].fillna("").astype(str),
+            "raw_instrument": aiib["financing_type"].fillna("").astype(str),
+            "commitment_amount_usd_m": aiib["amount_musd"],
+            "climate_amount_usd_m": aiib["amount_musd"],
+            "mitigation_amount_usd_m": np.where(objective == "mitigation", aiib["amount_musd"], 0.0),
+            "adaptation_amount_usd_m": np.where(objective == "adaptation", aiib["amount_musd"], 0.0),
+            "both_amount_usd_m": np.where(objective == "both", aiib["amount_musd"], 0.0),
         }
     )
-    out = out[out["objective"].isin(["mitigation", "adaptation", "both"])].copy()
+    return out
+
+
+def extract_cdb_row_text(text: str, row_name: str) -> str | None:
+    m = re.search(rf"{row_name}\s+([^\n]+)", text)
+    if not m:
+        return None
+    return m.group(1).strip()
+
+
+def load_cdb_climate_disclosures(session: requests.Session, cache_dir: Path) -> pd.DataFrame:
+    records: list[dict] = []
+    for period, url in CDB_DISCLOSURE_PDFS.items():
+        pdf_path = download_to_cache(session, url, cache_dir / "cdb" / f"{period}.pdf")
+        reader = PdfReader(str(pdf_path))
+        text = "\n".join((p.extract_text() or "") for p in reader.pages)
+        row = extract_cdb_row_text(text, "合计")
+        if not row:
+            continue
+        values = re.findall(r"-?\d[\d,]*(?:\.\d+)?", row)
+        # Row contains repeated blocks; use first quarter block where available.
+        # Expected first block: projects, loan_amount(万元), rate, annual_CO2e
+        if len(values) < 4:
+            continue
+        projects_count = float(values[0].replace(",", ""))
+        loan_amount_wan = float(values[1].replace(",", ""))
+        annual_reduction_tco2e = float(values[3].replace(",", ""))
+        year_match = re.search(r"(\d{4})", period)
+        year = int(year_match.group(1)) if year_match else None
+
+        records.append(
+            {
+                "source_dataset": "CDB_QUARTERLY_CLIMATE_DISCLOSURE",
+                "source_url": url,
+                "actor": "China Development Bank",
+                "project_id": f"CDB-{period}-AGG",
+                "project_name": f"CDB carbon-reduction loan disclosure {period}",
+                "country": "China",
+                "year": year,
+                "instrument": "debt",
+                "objective": "mitigation",
+                "sector": "energy",
+                "raw_sector": "carbon reduction lending (aggregate disclosure)",
+                "raw_instrument": "loan",
+                "commitment_amount_usd_m": loan_amount_wan * 10_000.0 / 1_000_000.0,
+                "climate_amount_usd_m": loan_amount_wan * 10_000.0 / 1_000_000.0,
+                "mitigation_amount_usd_m": loan_amount_wan * 10_000.0 / 1_000_000.0,
+                "adaptation_amount_usd_m": 0.0,
+                "both_amount_usd_m": 0.0,
+                "cdb_projects_count": projects_count,
+                "cdb_annual_reduction_tco2e": annual_reduction_tco2e,
+            }
+        )
+    if not records:
+        return pd.DataFrame()
+    out = pd.DataFrame(records)
+    for col in ["cdb_projects_count", "cdb_annual_reduction_tco2e"]:
+        if col not in out.columns:
+            out[col] = np.nan
     return out
 
 
@@ -629,7 +856,9 @@ def write_summary_markdown(projects: pd.DataFrame, outpath: Path, selected_oecd_
         "## Coverage",
         f"- OECD CRS project-level commitments for year(s): {selected_oecd_years}",
         f"- World Bank project-level climate coefficients dataset: {WORLD_BANK_COEFFICIENTS_URL}",
-        f"- MDB/DFI public disclosure dataset (includes AsDB and other MDBs): {MDB_DATASET_URL}",
+        f"- IDB direct climate datasets: {IDB_2023_CLIMATE_CSV_URL}, {IDB_2024_CLIMATE_CSV_URL}",
+        f"- AIIB direct project list feed: {AIIB_ALL_PROJECTS_JS_URL}",
+        f"- CDB climate loan disclosures (PDF): {list(CDB_DISCLOSURE_PDFS.values())}",
         "",
         "## Totals",
         f"- Total climate finance represented: **{total:,.1f} USD million**",
@@ -656,6 +885,8 @@ def write_summary_markdown(projects: pd.DataFrame, outpath: Path, selected_oecd_
         "",
         "## Method notes",
         "- OECD climate amounts are estimated from Rio markers using coefficients: principal=100%, significant=40%.",
+        "- AIIB objective tags are inferred from project title/sector keywords due to no explicit adaptation/mitigation split in the source feed.",
+        "- CDB data is currently aggregate climate-loan disclosure rows (quarterly), not fully project-level line items.",
         "- Objective classification is mutually exclusive (`mitigation`, `adaptation`, `both`) for flow visualisation.",
         "- Instrument classes are normalized to `grant`, `debt`, `equity`, `guarantee`, `other`.",
         "- Sector classes are keyword-based harmonization across source taxonomies.",
@@ -670,9 +901,14 @@ def run_pipeline(outdir: Path, cache_dir: Path, oecd_years: list[int]) -> Pipeli
 
     oecd_projects = load_oecd_projects(session=session, cache_dir=cache_dir, years=oecd_years)
     wb_projects = load_world_bank_projects(session=session, cache_dir=cache_dir)
-    mdb_projects = load_mdb_projects(session=session, cache_dir=cache_dir)
+    idb_projects = load_idb_projects(session=session, cache_dir=cache_dir)
+    aiib_projects = load_aiib_projects(session=session, cache_dir=cache_dir)
+    cdb_projects = load_cdb_climate_disclosures(session=session, cache_dir=cache_dir)
 
-    projects = pd.concat([oecd_projects, wb_projects, mdb_projects], ignore_index=True)
+    projects = pd.concat(
+        [oecd_projects, wb_projects, idb_projects, aiib_projects, cdb_projects],
+        ignore_index=True,
+    )
     projects = projects.replace([np.inf, -np.inf], np.nan)
     projects["climate_amount_usd_m"] = pd.to_numeric(projects["climate_amount_usd_m"], errors="coerce").fillna(0.0)
     projects = projects[projects["climate_amount_usd_m"] > 0].copy()
@@ -680,6 +916,9 @@ def run_pipeline(outdir: Path, cache_dir: Path, oecd_years: list[int]) -> Pipeli
 
     for col in ["commitment_amount_usd_m", "mitigation_amount_usd_m", "adaptation_amount_usd_m", "both_amount_usd_m"]:
         projects[col] = pd.to_numeric(projects[col], errors="coerce").fillna(0.0)
+    for extra_col in ["cdb_projects_count", "cdb_annual_reduction_tco2e"]:
+        if extra_col not in projects.columns:
+            projects[extra_col] = np.nan
 
     projects = projects.sort_values(["source_dataset", "year", "actor", "project_name"]).reset_index(drop=True)
     flow_edges = build_flow_edges(projects)

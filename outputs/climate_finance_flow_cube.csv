@@ -1,52 +1,35 @@
 actor,instrument,objective,sector,climate_amount_usd_m
-European Investment Bank,debt,mitigation,energy,46132.957362586145
-European Investment Bank,debt,mitigation,transport,43389.430797914065
+China Development Bank,debt,mitigation,energy,23828.2873
+Asian Infrastructure Investment Bank,other,mitigation,transport,21057.06
 World Bank (IBRD/IDA),debt,both,transport,20257.7363
 World Bank (IBRD/IDA),debt,mitigation,energy,19330.5637
+Asian Infrastructure Investment Bank,other,mitigation,energy,14039.11
+Asian Infrastructure Investment Bank,other,mitigation,other,13828.52
 World Bank (IBRD/IDA),debt,both,water,13750.6028
-European Investment Bank,debt,mitigation,industry_mining,13535.122221865751
 Japan / Japanese International Co-operation Agency,debt,mitigation,transport,12545.3340814
-European Investment Bank,debt,mitigation,other,9176.161460649799
 World Bank (IBRD/IDA),debt,both,agriculture_land_use,7847.5236
-European Investment Bank,debt,both,transport,7612.972325422922
 World Bank (IBRD/IDA),debt,both,other,7404.1598
 World Bank (IBRD/IDA),grant,mitigation,energy,7116.6191
 World Bank (IBRD/IDA),debt,both,energy,7104.1098
-Asian Development Bank,debt,both,transport,6615.82068589
 World Bank (IBRD/IDA),debt,both,finance_policy,6550.428
-European Investment Bank,debt,both,energy,5887.566029560196
 World Bank (IBRD/IDA),debt,adaptation,water,5821.52
 World Bank (IBRD/IDA),debt,mitigation,transport,5742.9889
-Inter American Development Bank,other,mitigation,other,5402.1923364141
 World Bank (IBRD/IDA),debt,adaptation,transport,4733.2557
-Asian Development Bank,debt,both,energy,4535.645363348569
 World Bank (IBRD/IDA),debt,adaptation,finance_policy,4506.1599
+Asian Infrastructure Investment Bank,other,mitigation,water,4488.6
 World Bank (IBRD/IDA),grant,both,energy,4326.442
-European Investment Bank,debt,both,water,4302.941181482091
-Asian Development Bank,debt,both,other,4298.12927677
-European Investment Bank,guarantee,mitigation,other,4020.175905622603
-Asian Development Bank,debt,both,water,3778.28997881
-Inter American Development Bank,other,mitigation,energy,3751.1320251861002
-European Bank for Reconstruction and Development ,debt,both,energy,3638.0434099999998
-European Investment Bank,debt,both,education,3505.550921829973
-Asian Development Bank,debt,both,agriculture_land_use,3264.10930921
-European Investment Bank,debt,both,buildings,3235.595749282887
+Asian Infrastructure Investment Bank,other,adaptation,other,3392.5
+Inter-American Development Bank,other,mitigation,other,3243.271227596
 Germany / KfW Bankengruppe (KfW banking group),debt,mitigation,energy,3167.7699986
 World Bank (IBRD/IDA),grant,both,water,2575.562
+Inter-American Development Bank,other,mitigation,energy,2347.1958697210002
 World Bank (IBRD/IDA),debt,both,education,2242.8949
 World Bank (IBRD/IDA),grant,both,transport,2221.0731
 World Bank (IBRD/IDA),debt,both,health,2212.9356
-European Investment Bank,debt,adaptation,water,2177.023566397
 United States / International Development Finance Corporation,debt,mitigation,transport,2136.6088
-European Investment Bank,debt,mitigation,health,2091.8895619354844
-Asian Development Bank,debt,mitigation,energy,2017.0447372371434
+Asian Infrastructure Investment Bank,other,adaptation,water,2077.6
 World Bank (IBRD/IDA),debt,mitigation,finance_policy,1891.9423000000002
-European Investment Bank,debt,mitigation,buildings,1883.5311884419484
 World Bank (IBRD/IDA),debt,adaptation,other,1807.9395
-Inter American Development Bank,other,both,transport,1784.454840071
-Inter American Development Bank,other,adaptation,other,1715.1633522995
-European Investment Bank,guarantee,mitigation,transport,1686.8881184444272
-Inter American Development Bank,other,adaptation,transport,1682.6623015224
 Japan / Japanese International Co-operation Agency,equity,mitigation,other,1572.5082400000001
 United States / Agency for International Development,grant,adaptation,health,1557.7353268000002
 World Bank (IBRD/IDA),grant,both,agriculture_land_use,1555.41
@@ -55,140 +38,108 @@ IMF Resilience and Sustainability Trust,debt,both,transport,1419.3699908
 Korea / Export-Import Bank of Korea,debt,adaptation,transport,1308.3588
 Germany / KfW Bankengruppe (KfW banking group),debt,mitigation,transport,1290.5156864
 World Bank (IBRD/IDA),debt,mitigation,other,1284.1502
-Inter American Development Bank,other,mitigation,water,1281.62721
 World Bank (IBRD/IDA),grant,both,finance_policy,1273.426
 World Bank (IBRD/IDA),grant,both,other,1264.2385
-African Development Bank,other,adaptation,other,1264.20481581016
 World Bank (IBRD/IDA),debt,both,industry_mining,1258.574
 World Bank (IBRD/IDA),debt,adaptation,agriculture_land_use,1220.272
-Inter American Development Bank,other,adaptation,water,1201.1579771019
-European Investment Bank,debt,both,other,1193.7480412504
+Inter-American Development Bank,other,adaptation,other,1218.3631145698
+Asian Infrastructure Investment Bank,other,adaptation,transport,1180.0
 World Bank (IBRD/IDA),grant,adaptation,finance_policy,1175.47
 EU Institutions / European Commission,grant,both,other,1167.5567792
-Inter American Development Bank,other,both,energy,1156.02721797
 World Bank (IBRD/IDA),grant,adaptation,water,1135.384
+Asian Infrastructure Investment Bank,other,both,energy,1100.0
 World Bank (IBRD/IDA),debt,both,buildings,1093.4955
 World Bank (IBRD/IDA),debt,adaptation,buildings,1055.036
 France / French Development Agency,debt,both,finance_policy,1010.0437922
-Inter American Development Bank,other,both,other,956.1734100000001
+Inter-American Development Bank,other,both,other,949.4104100000001
 Japan / Japanese International Co-operation Agency,debt,both,transport,945.8903014
-Asian Development Bank,debt,both,health,911.55117834
-European Investment Bank,guarantee,mitigation,industry_mining,903.96669278943
 Korea / Export-Import Bank of Korea,debt,both,transport,881.3042
 EU Institutions / European Commission,grant,both,transport,880.6597344
-European Investment Bank,guarantee,both,transport,865.04
 Germany / Federal Ministry for Economic Cooperation and Development,grant,mitigation,energy,862.450796
+Inter-American Development Bank,other,mitigation,water,832.59911
 World Bank (IBRD/IDA),debt,mitigation,agriculture_land_use,821.5712
-Asian Development Bank,debt,mitigation,other,805.3900493599999
 France / French Development Agency,debt,both,industry_mining,801.3172822
 France / French Development Agency,debt,mitigation,energy,793.7393860000001
-European Investment Bank,debt,mitigation,education,793.2563465000001
 France / French Development Agency,debt,mitigation,transport,791.570207
 EU Institutions / European Commission,grant,mitigation,transport,777.1609714000001
 IMF Resilience and Sustainability Trust,debt,adaptation,transport,775.9846220000001
 United States / Agency for International Development,grant,both,health,772.703566
-European Investment Bank,debt,adaptation,agriculture_land_use,763.2811024
 World Bank (IBRD/IDA),grant,mitigation,transport,755.2013999999999
 World Bank (IBRD/IDA),grant,adaptation,transport,752.0245
 Germany / Federal Ministry for Economic Cooperation and Development,grant,adaptation,other,699.9457774
-European Investment Bank,debt,mitigation,water,696.0367738566105
 World Bank (IBRD/IDA),debt,mitigation,industry_mining,679.3605
 Japan / Japanese International Co-operation Agency,debt,mitigation,energy,672.96389
 World Bank (IBRD/IDA),debt,adaptation,health,666.0504
 IMF Resilience and Sustainability Trust,debt,mitigation,transport,661.4774508
-European Investment Bank,equity,mitigation,industry_mining,659.4968339999999
-Inter American Development Bank,other,both,agriculture_land_use,651.486958
 EU Institutions / European Commission,grant,mitigation,energy,641.4637624
 Korea / Export-Import Bank of Korea,debt,mitigation,energy,633.885871
-Inter American Development Bank,other,adaptation,energy,630.2133251976
 EU Institutions / European Commission,grant,both,agriculture_land_use,621.4822918
 World Bank (IBRD/IDA),other,mitigation,energy,621.0855
-European Investment Bank,equity,mitigation,transport,609.011908005435
 France / French Development Agency,debt,both,energy,606.549488
 World Bank (IBRD/IDA),other,both,energy,605.5
 France / French Development Agency,debt,both,water,593.6748484
-African Development Bank,other,adaptation,agriculture_land_use,589.624025769
-European Investment Bank,debt,adaptation,health,575.07243
-European Investment Bank,debt,adaptation,other,564.40602
 EU Institutions / European Commission,grant,both,energy,561.871788
 World Bank (IBRD/IDA),debt,mitigation,waste,550.8565
 Netherlands / Ministry of Foreign Affairs of the Netherlands,grant,adaptation,other,549.5358544000001
-European Bank for Reconstruction and Development ,debt,both,water,548.23183
 France / French Development Agency,debt,both,buildings,543.336752
 EU Institutions / European Commission,grant,both,finance_policy,539.9363206
 United States / International Development Finance Corporation,equity,mitigation,transport,537.5
-Asian Development Bank,debt,adaptation,agriculture_land_use,536.662
 Japan / Japanese International Co-operation Agency,debt,adaptation,water,532.1565478
-African Development Bank,other,mitigation,other,516.69541937286
 United Kingdom / British International Investment,equity,mitigation,energy,515.7645736000001
-European Investment Bank,equity,mitigation,energy,512.6348961722595
+Inter-American Development Bank,other,both,energy,511.62619297
 World Bank (IBRD/IDA),grant,both,health,511.271
 Germany / KfW Bankengruppe (KfW banking group),debt,adaptation,water,503.9947138
 Germany / KfW Bankengruppe (KfW banking group),debt,mitigation,finance_policy,492.684482
 Norway / NORFUND,equity,mitigation,energy,480.1077952
 Germany / Deutsche Investitions- und Entwicklungsgesellschaft mbH (German Investment and Development Company),debt,mitigation,energy,478.307526
-European Investment Bank,debt,adaptation,transport,472.38010399999996
+Inter-American Development Bank,other,both,transport,470.715013
 France / Proparco,debt,mitigation,industry_mining,467.164606
-Inter American Development Bank,other,mitigation,transport,465.1033630746
 IMF Resilience and Sustainability Trust,debt,mitigation,energy,459.4008504
 Japan / Japanese International Co-operation Agency,debt,adaptation,transport,458.276818
-Inter American Development Bank,other,adaptation,agriculture_land_use,441.45804499999997
-Asian Development Bank,debt,adaptation,transport,440.05250703999997
 United Kingdom / British International Investment,equity,mitigation,finance_policy,437.7058924
 France / French Development Agency,debt,mitigation,other,436.94570619999996
-African Development Bank,other,adaptation,water,434.38891003942
 Germany / Federal Ministry for Economic Cooperation and Development,grant,adaptation,water,415.3598256
-African Development Bank,other,mitigation,transport,414.37001478214
 EU Institutions / European Commission,grant,adaptation,other,413.0129804
 Germany / Federal Ministry for Economic Cooperation and Development,grant,both,other,409.53639560000005
 United States / Agency for International Development,grant,adaptation,agriculture_land_use,404.3257874
 France / Proparco,debt,mitigation,energy,403.293507
 Global Environment Facility / GEF Trust Fund,grant,both,agriculture_land_use,386.3102508
-Asian Development Bank,debt,mitigation,transport,381.6845893980161
-African Development Bank,other,mitigation,energy,379.97045983148
 EU Institutions / European Commission,grant,mitigation,industry_mining,377.9225402
-Asian Development Bank,debt,both,education,371.02503834
+Inter-American Development Bank,other,adaptation,energy,371.8678121976
 Germany / Federal Ministry for Economic Affairs and Climate Action,grant,mitigation,energy,369.8794506
 Germany / Federal Ministry for Economic Cooperation and Development,debt,mitigation,energy,363.67019799999997
+Inter-American Development Bank,other,adaptation,water,360.456934102
 United States / Agency for International Development,grant,mitigation,energy,355.864003
 France / French Development Agency,debt,both,transport,351.58811860000003
 France / French Development Agency,debt,both,other,337.3842764
-Asian Development Bank,debt,both,industry_mining,334.186
 "United Kingdom / Foreign, Commonwealth and Development Office",grant,both,finance_policy,330.2615348
-European Investment Bank,debt,both,agriculture_land_use,329.61773095999996
 EU Institutions / European Commission,grant,both,industry_mining,311.2678002
-Asian Development Bank,grant,both,agriculture_land_use,306.42172543412664
 France / French Development Agency,debt,adaptation,buildings,303.4148568
-Inter American Development Bank,other,both,finance_policy,298.747523
-European Investment Bank,guarantee,mitigation,energy,290.9743652498331
 France / Proparco,debt,mitigation,finance_policy,286.983029
 France / French Development Agency,debt,adaptation,water,286.582357
 France / French Development Agency,debt,both,agriculture_land_use,283.8800764
 Norway / NORFUND,debt,mitigation,energy,282.567213
+Inter-American Development Bank,other,both,agriculture_land_use,281.271
 World Bank (IBRD/IDA),grant,both,education,280.613
-European Bank for Reconstruction and Development ,debt,both,agriculture_land_use,279.25741
-Asian Development Bank,grant,both,energy,273.3975252203667
+Inter-American Development Bank,other,adaptation,transport,279.4195135224
 World Bank (IBRD/IDA),debt,mitigation,education,269.7096
 World Bank (IBRD/IDA),other,both,finance_policy,265.4
 Netherlands / Ministry of Foreign Affairs of the Netherlands,grant,adaptation,agriculture_land_use,262.286287
 World Bank (IBRD/IDA),grant,mitigation,other,261.566
 "United Kingdom / Foreign, Commonwealth and Development Office",grant,both,transport,259.1079246
+Inter-American Development Bank,other,mitigation,transport,256.39157
 EU Institutions / European Commission,grant,adaptation,agriculture_land_use,255.746431
 Germany / Federal Ministry for Economic Cooperation and Development,grant,adaptation,transport,255.15964
 United Kingdom / Department of Energy and Climate Change,grant,both,agriculture_land_use,254.99676499999998
 EU Institutions / European Commission,grant,adaptation,transport,252.2455978
 Norway / Ministry of Climate and Environment,grant,mitigation,finance_policy,249.54176900000002
 United States / Agency for International Development,grant,adaptation,water,249.3902028
-Asian Development Bank,debt,adaptation,water,248.118
-Inter American Development Bank,other,mitigation,agriculture_land_use,247.97490962
-European Bank for Reconstruction and Development ,other,both,energy,244.6224
 World Bank (IBRD/IDA),other,mitigation,finance_policy,240.0
 World Bank (IBRD/IDA),debt,adaptation,education,238.3668
 United Kingdom / British International Investment,equity,mitigation,agriculture_land_use,237.093847
 Germany / Federal Ministry for Economic Affairs and Climate Action,grant,mitigation,finance_policy,235.2121912
 Japan / Japanese International Co-operation Agency,debt,both,industry_mining,235.1549822
 Global Environment Facility / GEF Trust Fund,grant,both,other,231.401341
-European Investment Bank,guarantee,mitigation,water,230.209
 Private Infrastructure Development Group / Emerging Africa Infrastructure Fund,debt,mitigation,energy,220.96
 EU Institutions / European Commission,grant,both,water,218.556969
 Gates Foundation / Bill & Melinda Gates Foundation,grant,adaptation,agriculture_land_use,218.32750000000001
@@ -196,7 +147,7 @@ United Kingdom / Department of Energy and Climate Change,grant,mitigation,agricu
 Council of Europe Development Bank / Council of Europe Development Bank (CEB),debt,adaptation,other,216.262976
 United Kingdom / British International Investment,debt,mitigation,finance_policy,213.2753156
 EU Institutions / European Commission,grant,adaptation,water,210.3993082
-Asian Development Bank,grant,both,water,209.94988898666665
+Inter-American Development Bank,other,mitigation,agriculture_land_use,208.41510000000002
 Germany / Federal Ministry for Economic Cooperation and Development,grant,mitigation,agriculture_land_use,207.7805538
 France / Proparco,debt,mitigation,buildings,207.25592319999996
 France / French Development Agency,debt,adaptation,other,206.536989
@@ -207,7 +158,6 @@ World Bank (IBRD/IDA),grant,adaptation,health,201.2821
 Japan / Japanese International Co-operation Agency,debt,adaptation,health,200.64549920000002
 Germany / Federal Ministry for Economic Cooperation and Development,grant,adaptation,agriculture_land_use,200.3057196
 World Bank (IBRD/IDA),other,both,water,200.0
-European Investment Bank,debt,both,industry_mining,199.517
 Canada / Global Affairs Canada,debt,both,energy,199.510273
 United Kingdom / Department of Energy and Climate Change,grant,mitigation,energy,197.794341
 Netherlands / Ministry of Foreign Affairs of the Netherlands,grant,both,agriculture_land_use,197.703766
@@ -218,40 +168,32 @@ United States / Agency for International Development,grant,adaptation,finance_po
 Norway / Ministry of Foreign Affairs,grant,mitigation,finance_policy,190.2985196
 EU Institutions / European Commission,grant,mitigation,water,189.326534
 Germany / Federal Ministry for Economic Cooperation and Development,grant,both,transport,188.65388760000002
-Inter American Development Bank,other,mitigation,waste,184.799205
 "United Kingdom / Foreign, Commonwealth and Development Office",grant,both,other,182.3288882
 Germany / Federal Ministry for Economic Cooperation and Development,grant,both,agriculture_land_use,181.2245468
 "United Kingdom / Foreign, Commonwealth and Development Office",grant,adaptation,other,180.1429304
 EU Institutions / European Commission,grant,mitigation,other,178.1737874
 Germany / Deutsche Investitions- und Entwicklungsgesellschaft mbH (German Investment and Development Company),debt,mitigation,finance_policy,174.47656120000002
 Germany / Federal Ministry for Economic Cooperation and Development,grant,adaptation,buildings,174.0840662
-European Investment Bank,equity,both,transport,169.19211610333394
+Inter-American Development Bank,other,adaptation,agriculture_land_use,171.546645
 Germany / Federal Ministry for Economic Cooperation and Development,grant,mitigation,transport,167.5733636
 "United Kingdom / Foreign, Commonwealth and Development Office",equity,mitigation,finance_policy,167.4460206
 Netherlands / Ministry of Foreign Affairs of the Netherlands,grant,both,other,164.99527220000002
 United States / Agency for International Development,grant,adaptation,transport,163.6990738
 "Italy / Ministry of Environment and Energy Security, funds administered by CDP",debt,mitigation,finance_policy,162.232317
 EU Institutions / European Commission,grant,adaptation,industry_mining,160.3286026
-European Investment Bank,guarantee,mitigation,buildings,157.662561804924
-Inter American Development Bank,other,both,water,157.34396950000001
 Austria / Austrian Development Bank,debt,mitigation,energy,156.790544
 Norway / Norwegian Agency for Development Co-operation,grant,mitigation,agriculture_land_use,153.670641
-European Investment Bank,debt,both,health,153.45139
-European Investment Bank,guarantee,both,water,152.18059266597305
-Asian Development Bank,debt,adaptation,other,150.61794700000002
 OPEC Fund for International Development / OPEC Fund,debt,both,energy,150.0
 Netherlands / Ministry of Foreign Affairs of the Netherlands,grant,both,finance_policy,149.6768768
 Netherlands / Ministry of Foreign Affairs of the Netherlands,grant,both,water,149.09102539999998
 France / French Development Agency,grant,adaptation,other,148.036773
 Netherlands / Ministry of Foreign Affairs of the Netherlands,grant,both,energy,147.5081496
 Global Environment Facility / GEF Trust Fund,grant,both,finance_policy,147.0367316
-African Development Bank,other,adaptation,transport,146.9691384187502
 Canada / Global Affairs Canada,debt,mitigation,energy,146.715328
 Korea / Export-Import Bank of Korea,debt,mitigation,transport,146.682
 United States / Agency for International Development,grant,mitigation,finance_policy,146.66991
 World Bank (IBRD/IDA),debt,adaptation,energy,145.9
 United States / Millennium Challenge Corporation,grant,mitigation,energy,145.831846
-African Development Bank,other,mitigation,industry_mining,145.74942253066
 World Bank (IBRD/IDA),grant,both,buildings,145.0
 World Bank (IBRD/IDA),grant,mitigation,agriculture_land_use,144.195
 United Kingdom / British International Investment,debt,mitigation,energy,143.4203744
@@ -259,7 +201,6 @@ France / French Development Agency,debt,adaptation,industry_mining,143.158917
 EU Institutions / European Commission,grant,mitigation,finance_policy,140.58436840000002
 Japan / Ministry of Foreign Affairs,grant,adaptation,transport,139.8359354
 Germany / Federal Ministry for Economic Cooperation and Development,equity,mitigation,energy,138.412981
-European Investment Bank,equity,mitigation,other,136.66276374801288
 "Italy / Ministry of Environment and Energy Security, funds administered by CDP",debt,mitigation,energy,135.193597
 "United Kingdom / Foreign, Commonwealth and Development Office",grant,adaptation,transport,134.8798382
 United Kingdom / Department of Energy and Climate Change,grant,both,energy,134.071296
@@ -275,14 +216,11 @@ EU Institutions / European Commission,grant,adaptation,finance_policy,122.899719
 Global Environment Facility / GEF Trust Fund,grant,both,transport,122.317088
 World Bank (IBRD/IDA),grant,mitigation,finance_policy,122.13
 Germany / KfW Bankengruppe (KfW banking group),debt,mitigation,water,121.13346320000001
-Asian Development Bank,grant,both,other,120.69824599904334
 OPEC Fund for International Development / OPEC Fund,debt,mitigation,energy,120.0
-European Bank for Reconstruction and Development ,debt,both,transport,119.92227
 France / French Development Agency,debt,both,education,118.5149176
 Austria / Austrian Development Bank,equity,mitigation,energy,117.358885
 France / Proparco,debt,mitigation,other,117.151928
 World Bank (IBRD/IDA),grant,adaptation,education,116.925
-Asian Development Bank,grant,both,transport,116.83335303266666
 Australia / Australian Government,grant,both,other,116.02033460000001
 Australia / Australian Government,grant,adaptation,transport,113.5479176
 United Kingdom / Department for Environment Food and Rural Affairs,grant,both,other,113.043359
@@ -296,18 +234,15 @@ EU Institutions / European Commission,grant,mitigation,agriculture_land_use,105.
 CGIAR,grant,both,agriculture_land_use,104.0888786
 France / French Development Agency,grant,adaptation,water,103.85193500000001
 Germany / Federal Ministry for Economic Affairs and Climate Action,grant,mitigation,transport,102.04459800000001
-Asian Development Bank,equity,mitigation,other,101.46176646
 Germany / Federal Ministry for Economic Cooperation and Development,grant,mitigation,other,101.1424236
 Japan / Other Ministries,grant,adaptation,other,100.9129994
-European Investment Bank,equity,mitigation,water,100.71247442295436
 Australia / Australian Government,grant,both,transport,100.5177094
 United States / Agency for International Development,grant,adaptation,other,100.517348
-Korea / Export-Import Bank of Korea,debt,adaptation,finance_policy,100.0
 Korea / Export-Import Bank of Korea,debt,both,other,100.0
+Korea / Export-Import Bank of Korea,debt,adaptation,finance_policy,100.0
 EU Institutions / European Commission,grant,both,buildings,99.9675924
 David and Lucile Packard Foundation / David & Lucile Packard Foundation,grant,mitigation,transport,99.353508
 Denmark / Ministry of Foreign Affairs,grant,both,other,99.0372844
-African Development Bank,other,mitigation,buildings,97.89088582414
 United Kingdom / Department of Energy and Climate Change,grant,mitigation,buildings,96.932204
 Japan / Ministry of Foreign Affairs,grant,adaptation,water,96.48949
 World Bank (IBRD/IDA),other,both,other,96.0
@@ -324,10 +259,7 @@ France / Proparco,debt,mitigation,transport,90.4812652
 "Italy / Ministry of Economy and Finance funds, administered by CDP",debt,mitigation,energy,90.309323
 Canada / Global Affairs Canada,grant,adaptation,agriculture_land_use,90.0839574
 Germany / KfW Bankengruppe (KfW banking group),debt,both,energy,89.7577892
-Asian Development Bank,grant,mitigation,energy,89.473185
-European Bank for Reconstruction and Development ,equity,both,energy,88.884
 Australia / Australian Government,grant,both,energy,88.697963
-African Development Bank,other,both,transport,87.0
 Denmark / Ministry of Foreign Affairs,grant,mitigation,energy,86.784163
 "United Kingdom / Foreign, Commonwealth and Development Office",grant,mitigation,finance_policy,86.68567820000001
 Global Environment Facility / GEF Trust Fund,grant,mitigation,energy,86.610989
@@ -345,16 +277,13 @@ Australia / Australian Government,grant,both,finance_policy,80.2731746
 Germany / Federal Ministry for Economic Cooperation and Development,grant,both,water,79.7275676
 Germany / Federal Ministry for Economic Affairs and Climate Action,grant,both,other,79.08945
 Norway / Norwegian Agency for Development Co-operation,grant,adaptation,other,78.0822844
-Asian Development Bank,grant,adaptation,agriculture_land_use,77.577385
 France / French Development Agency,grant,adaptation,agriculture_land_use,77.534817
 New Zealand / Ministry of Foreign Affairs and Trade,grant,both,energy,77.2770178
-Asian Development Bank,debt,adaptation,education,75.0573756631935
 Germany / Federal Ministry for Economic Affairs and Climate Action,grant,both,finance_policy,74.94640720000001
 New Zealand / Ministry of Foreign Affairs and Trade,grant,both,transport,73.8917518
 France / Proparco,equity,mitigation,industry_mining,73.6752196
 Germany / Federal Ministry for Economic Affairs and Climate Action,grant,both,energy,73.3406502
 France / Proparco,debt,both,industry_mining,73.2519166
-European Investment Bank,debt,mitigation,agriculture_land_use,72.26297
 "United Kingdom / Foreign, Commonwealth and Development Office",grant,both,health,72.2059954
 Ireland / Department of Foreign Affairs,grant,adaptation,other,71.6655968
 Norway / NORFUND,equity,mitigation,agriculture_land_use,71.079107
@@ -363,7 +292,6 @@ France / French Development Agency,grant,both,other,69.9920324
 United States / Agency for International Development,grant,mitigation,other,69.780968
 "United Kingdom / Foreign, Commonwealth and Development Office",grant,adaptation,buildings,69.1933126
 World Bank (IBRD/IDA),grant,adaptation,energy,68.55
-European Investment Bank,equity,both,agriculture_land_use,68.1604
 Norway / Ministry of Foreign Affairs,grant,both,transport,68.0544682
 Australia / Australian Government,grant,adaptation,other,67.6068146
 EU Institutions / European Commission,grant,both,education,66.9570594
@@ -372,15 +300,14 @@ Japan / Japanese International Co-operation Agency,debt,both,agriculture_land_us
 World Bank (IBRD/IDA),other,adaptation,finance_policy,66.0
 Korea / Export-Import Bank of Korea,debt,mitigation,health,65.44
 Sweden / Swedish International Development Authority,grant,both,finance_policy,65.4343956
-European Investment Bank,debt,adaptation,industry_mining,65.03735505703571
 Germany / Deutsche Investitions- und Entwicklungsgesellschaft mbH (German Investment and Development Company),debt,mitigation,industry_mining,64.99538600000001
 Germany / Federal Ministry for Economic Cooperation and Development,debt,mitigation,other,64.892927
 Korea / Export-Import Bank of Korea,debt,both,education,64.8
 World Bank (IBRD/IDA),debt,adaptation,industry_mining,64.11840000000001
 France / Proparco,debt,mitigation,education,63.853406
+Inter-American Development Bank,other,both,water,62.6689695
 Belgium / Belgian Investment Company for Developing Countries,debt,mitigation,finance_policy,62.652907400000004
 EU Institutions / European Commission,grant,mitigation,health,61.90110000000001
-Asian Development Bank,debt,mitigation,water,61.84
 Australia / Australian Government,grant,both,education,61.759328000000004
 United States / International Development Finance Corporation,debt,mitigation,energy,61.6
 Sweden / SwedFund,equity,mitigation,energy,61.425961
@@ -389,6 +316,7 @@ Germany / Federal Ministry for Economic Cooperation and Development,grant,adapta
 Germany / Federal Ministry for Economic Cooperation and Development,grant,mitigation,finance_policy,61.03096300000001
 Denmark / Ministry of Foreign Affairs,grant,both,transport,60.9656794
 Germany / Federal Ministry for Economic Affairs and Climate Action,grant,adaptation,finance_policy,60.247421
+Asian Infrastructure Investment Bank,other,mitigation,education,60.0
 EU Institutions / European Commission,grant,mitigation,education,59.71785560000001
 Denmark / Ministry of Foreign Affairs,grant,adaptation,finance_policy,59.207429399999995
 Germany / Deutsche Investitions- und Entwicklungsgesellschaft mbH (German Investment and Development Company),debt,mitigation,transport,59.0308416
@@ -399,10 +327,9 @@ Germany / KfW Bankengruppe (KfW banking group),debt,both,transport,58.3966168000
 IMF Resilience and Sustainability Trust,debt,both,energy,58.328228800000005
 "United Kingdom / Foreign, Commonwealth and Development Office",grant,adaptation,finance_policy,57.9334912
 Sweden / SwedFund,equity,both,energy,57.6971036
-Asian Development Bank,equity,mitigation,energy,57.625
 Korea / Miscellaneous,grant,mitigation,energy,57.458739
+Inter-American Development Bank,other,both,finance_policy,57.347531000000004
 United Kingdom / British International Investment,debt,mitigation,other,57.1912588
-African Development Bank,other,mitigation,water,56.92087703479999
 United Kingdom / British International Investment,equity,both,finance_policy,56.361715000000004
 Global Environment Facility / GEF Trust Fund,grant,both,water,56.3463822
 Japan / Japanese International Co-operation Agency,debt,adaptation,agriculture_land_use,56.3201572
@@ -417,15 +344,13 @@ Netherlands / Ministry of Foreign Affairs of the Netherlands,grant,mitigation,ot
 Denmark / Ministry of Foreign Affairs,grant,both,finance_policy,55.1924798
 Germany / Federal Ministry for Economic Cooperation and Development,grant,adaptation,energy,55.065453000000005
 United States / Agency for International Development,grant,adaptation,energy,54.159973
-"France / Ministry of Economy, Finance and Industry",grant,adaptation,other,54.077439
 "Italy / Ministry of Environment and Energy Security, funds administered by CDP",debt,both,transport,54.077439
+"France / Ministry of Economy, Finance and Industry",grant,adaptation,other,54.077439
 Germany / KfW Bankengruppe (KfW banking group),debt,adaptation,energy,54.065745
 Germany / KfW Bankengruppe (KfW banking group),debt,both,buildings,54.065744
 France / French Development Agency,debt,adaptation,finance_policy,54.065743999999995
 United States / Agency for International Development,grant,both,other,54.0367018
 Italy / Ministry of Environment and Energy Security,grant,both,energy,53.9125206
-African Development Bank,other,mitigation,agriculture_land_use,53.59
-European Investment Bank,equity,both,energy,53.221500000000006
 Adaptation Fund,grant,adaptation,other,52.996
 Denmark / Investment Fund For Developing Countries,debt,mitigation,energy,52.9663668
 Switzerland / State Secretariat for Economic Affairs,grant,mitigation,energy,52.760985
@@ -454,7 +379,6 @@ United States / Agency for International Development,grant,both,finance_policy,4
 Australia / Australian Government,grant,both,water,46.5356594
 Germany / Federal Ministry for Economic Affairs and Climate Action,grant,mitigation,agriculture_land_use,46.4589658
 Global Environment Facility / GEF Trust Fund,grant,both,energy,46.4455276
-Asian Development Bank,grant,adaptation,water,46.30929886
 Germany / Federal Ministry of Finance,debt,both,other,46.1119292
 United Kingdom / British International Investment,equity,mitigation,buildings,45.8517862
 Ireland / Department of Foreign Affairs,grant,both,other,45.4130838
@@ -465,22 +389,19 @@ William and Flora Hewlett Foundation / William & Flora Hewlett Foundation,grant,
 Japan / Japanese International Co-operation Agency,grant,adaptation,agriculture_land_use,43.754001200000005
 Japan / Japanese International Co-operation Agency,grant,adaptation,water,43.7074384
 Germany / Federal Foreign Office,grant,adaptation,buildings,43.366099000000006
-Council of Europe Development Bank / Council of Europe Development Bank (CEB),debt,mitigation,industry_mining,43.2619512
 Italy / Cassa Depositi e Prestiti,debt,mitigation,other,43.2619512
+Council of Europe Development Bank / Council of Europe Development Bank (CEB),debt,mitigation,industry_mining,43.2619512
 France / French Development Agency,debt,adaptation,agriculture_land_use,43.2596118
-European Investment Bank,equity,mitigation,agriculture_land_use,43.251999999999995
 Korea / Export-Import Bank of Korea,debt,mitigation,finance_policy,43.0924
 United States / Agency for International Development,grant,adaptation,education,42.0351468
 Germany / Federal Ministry of Health,grant,adaptation,health,41.8239604
 Switzerland / Swiss Agency for Development and Co-operation,grant,both,energy,41.3790914
 Denmark / Ministry of Foreign Affairs,grant,both,buildings,41.2934144
-Asian Development Bank,grant,both,education,41.2368692998
 Japan / Ministry of Foreign Affairs,grant,adaptation,agriculture_land_use,40.7187056
 New Zealand / Ministry of Foreign Affairs and Trade,grant,both,agriculture_land_use,40.448061
 Japan / Other Ministries,grant,adaptation,health,40.256
 Switzerland / Swiss Agency for Development and Co-operation,grant,adaptation,water,40.2538286
 Australia / Australian Government,grant,adaptation,agriculture_land_use,40.1703276
-Asian Development Bank,debt,mitigation,industry_mining,40.0
 Sweden / Swedish International Development Authority,grant,both,water,39.8956592
 Korea / Korea International Cooperation Agency,grant,both,water,39.56163
 "United Kingdom / Department for Business, Innovation and Skills",grant,mitigation,energy,39.4480214
@@ -509,15 +430,12 @@ Switzerland / Swiss Investment Fund for Emerging Markets,equity,both,industry_mi
 United Kingdom / Department of Energy and Climate Change,grant,mitigation,finance_policy,35.986146999999995
 United States / International Development Finance Corporation,equity,adaptation,transport,35.900000000000006
 France / French Development Agency,grant,adaptation,industry_mining,35.788675
-Asian Development Bank,debt,mitigation,agriculture_land_use,35.7
 Adaptation Fund,grant,adaptation,water,35.5
-European Bank for Reconstruction and Development ,debt,both,industry_mining,35.2659
 Spain / Ministry of Economy and Business,grant,both,energy,35.150335999999996
 New Zealand / Ministry of Foreign Affairs and Trade,grant,adaptation,other,35.043503199999996
 Canada / Global Affairs Canada,debt,both,transport,35.0364964
 Denmark / Investment Fund For Developing Countries,equity,mitigation,energy,34.834688
 Italy / Agenzia italiana per la cooperazione allo sviluppo,grant,adaptation,other,34.767960200000005
-Asian Development Bank,grant,both,health,34.51718729527
 France / Proparco,debt,adaptation,water,34.480832
 Denmark / Ministry of Foreign Affairs,grant,adaptation,transport,34.1719432
 IKEA Foundation,grant,both,other,34.084454
@@ -543,7 +461,6 @@ Germany / Federal Ministry for Economic Affairs and Climate Action,grant,both,bu
 EU Institutions / European Commission,grant,adaptation,health,32.034787200000004
 Belgium / Directorate General for Co-operation and Development,grant,both,transport,31.8996394
 Germany / KfW Bankengruppe (KfW banking group),debt,adaptation,finance_policy,31.7906576
-European Investment Bank,debt,adaptation,education,31.635862499999998
 Japan / Japanese International Co-operation Agency,equity,mitigation,transport,31.5597968
 Canada / Global Affairs Canada,grant,both,other,31.3839982
 United Kingdom / Department for Environment Food and Rural Affairs,grant,both,agriculture_land_use,31.2344404
@@ -564,7 +481,6 @@ Canada / Global Affairs Canada,grant,both,transport,29.3656876
 Global Environment Facility / GEF Trust Fund,grant,adaptation,water,29.3547804
 New Zealand / Ministry of Foreign Affairs and Trade,grant,adaptation,water,29.167846
 Arcadia / Arcadia Fund,grant,mitigation,other,29.045039600000003
-Asian Development Bank,grant,adaptation,other,28.85558886
 Germany / Federal Ministry for Economic Cooperation and Development,grant,mitigation,education,28.795040800000002
 Wellcome Trust,grant,adaptation,health,28.6870576
 United Kingdom / British International Investment,debt,mitigation,buildings,28.59457
@@ -582,13 +498,11 @@ Germany / Federal Ministry for Economic Cooperation and Development,grant,both,e
 Germany / KfW Bankengruppe (KfW banking group),debt,both,finance_policy,27.681660800000003
 Japan / Ministry of Foreign Affairs,grant,adaptation,buildings,27.597736
 Australia / Australian Government,grant,adaptation,education,27.5889302
-Asian Development Bank,debt,adaptation,health,27.39
+Inter-American Development Bank,other,mitigation,waste,27.410705000000004
 Ireland / Department of Foreign Affairs,grant,adaptation,finance_policy,27.3589684
 Korea / Export-Import Bank of Korea,debt,adaptation,other,27.2112
-European Bank for Reconstruction and Development ,other,both,transport,27.060000000000002
 "Italy / Ministry of Environment and Energy Security, funds administered by CDP",debt,mitigation,transport,27.038719
 France / French Development Agency,debt,mitigation,education,27.032872
-European Bank for Reconstruction and Development ,guarantee,both,energy,27.0325
 France / French Development Agency,grant,both,health,26.865671000000003
 World Bank (IBRD/IDA),grant,both,industry_mining,26.695999999999998
 EU Institutions / European Commission,grant,adaptation,education,26.6555282
@@ -616,7 +530,6 @@ Norway / Ministry of Foreign Affairs,grant,both,buildings,25.453519999999997
 Global Environment Facility / GEF Trust Fund,grant,both,industry_mining,25.419197600000004
 Bloomberg Family Foundation,grant,mitigation,energy,25.1308
 Austria / Austrian Development Bank,debt,both,energy,25.0
-Asian Development Bank,debt,adaptation,industry_mining,25.0
 France / Proparco,equity,mitigation,buildings,24.860142599999996
 France / French Development Agency,grant,adaptation,energy,24.668141
 Switzerland / State Secretariat for Economic Affairs,grant,both,buildings,24.6659504
@@ -661,8 +574,8 @@ Canada / FinDev Canada,debt,mitigation,transport,20.482335600000003
 Global Environment Facility / GEF Trust Fund,grant,mitigation,finance_policy,20.263161200000003
 Austria / Austrian Development Bank,debt,both,transport,20.1
 Norway / Ministry of Climate and Environment,grant,mitigation,agriculture_land_use,20.089589
-Global Environment Facility / Least Developed Countries Trust Fund (LDCF),grant,adaptation,water,20.0
 Private Infrastructure Development Group / Emerging Africa Infrastructure Fund,debt,mitigation,industry_mining,20.0
+Global Environment Facility / Least Developed Countries Trust Fund (LDCF),grant,adaptation,water,20.0
 Belgium / Belgian Investment Company for Developing Countries,equity,mitigation,finance_policy,19.9419732
 Denmark / Ministry of Foreign Affairs,grant,adaptation,water,19.9329602
 Japan / Ministry of Foreign Affairs,grant,mitigation,other,19.7981054
@@ -726,10 +639,8 @@ Germany / Federal Ministry of Education and Research,grant,mitigation,energy,16.
 "United Kingdom / Foreign, Commonwealth and Development Office",grant,adaptation,energy,16.153882199999998
 Denmark / Ministry of Foreign Affairs,grant,mitigation,transport,16.050377400000002
 Germany / Federal Foreign Office,grant,both,finance_policy,16.031219999999998
-European Investment Bank,equity,adaptation,buildings,15.966450000000002
 Austria / Austrian Development Agency,grant,adaptation,other,15.9524504
 Denmark / Investment Fund For Developing Countries,debt,mitigation,water,15.9339216
-European Investment Bank,guarantee,adaptation,other,15.900299999999998
 Norway / Ministry of Foreign Affairs,grant,adaptation,buildings,15.852569800000001
 New Zealand / Ministry of Foreign Affairs and Trade,grant,adaptation,buildings,15.805884200000001
 Denmark / Ministry of Foreign Affairs,grant,both,energy,15.7092578
@@ -737,14 +648,12 @@ Korea / Korea International Cooperation Agency,grant,mitigation,transport,15.633
 Korea / Miscellaneous,grant,both,energy,15.5930982
 France / Ministry of Foreign Affairs,grant,adaptation,other,15.5273838
 Germany / Federal Ministry for Economic Affairs and Climate Action,grant,adaptation,water,15.474452
-Asian Development Bank,grant,adaptation,energy,15.31
 Gates Foundation / Bill & Melinda Gates Foundation,grant,both,agriculture_land_use,15.28946
 "Austria / Federal Ministry of Climate Action, Environment, Energy, Mobility, Innovation and Technology",grant,both,agriculture_land_use,15.066168000000001
+Private Infrastructure Development Group / InfraCo Africa,equity,both,energy,15.0
+"Italy / Ministry of Environment and Energy Security, funds administered by CDP",debt,adaptation,agriculture_land_use,15.0
 "Italy / Ministry of Environment and Energy Security, funds administered by CDP",debt,adaptation,transport,15.0
 United States / International Development Finance Corporation,debt,adaptation,transport,15.0
-"Italy / Ministry of Environment and Energy Security, funds administered by CDP",debt,adaptation,agriculture_land_use,15.0
-Asian Development Bank,equity,both,other,15.0
-Private Infrastructure Development Group / InfraCo Africa,equity,both,energy,15.0
 Italy / Agenzia italiana per la cooperazione allo sviluppo,grant,both,other,14.963638000000001
 Norway / Ministry of Foreign Affairs,grant,adaptation,finance_policy,14.949145
 Global Environment Facility / GEF Trust Fund,grant,adaptation,other,14.6854112
@@ -767,10 +676,8 @@ Denmark / Ministry of Foreign Affairs,grant,adaptation,education,13.9276344
 Global Environment Facility / GEF Trust Fund,debt,mitigation,energy,13.904513
 Austria / Austrian Development Agency,grant,adaptation,water,13.8849576
 Switzerland / Swiss Agency for Development and Co-operation,grant,both,transport,13.760036800000002
-Asian Development Bank,grant,mitigation,transport,13.75
 Ireland / Department of Foreign Affairs,grant,adaptation,agriculture_land_use,13.73616
 France / CIRAD,grant,adaptation,agriculture_land_use,13.6772392
-European Bank for Reconstruction and Development ,other,both,industry_mining,13.624379999999999
 Denmark / Ministry of Foreign Affairs,grant,mitigation,other,13.580535600000001
 Korea / Korea International Cooperation Agency,grant,adaptation,buildings,13.524586200000002
 Nordic Development Fund,equity,adaptation,finance_policy,13.5
@@ -831,16 +738,14 @@ France / French Development Agency,grant,adaptation,education,10.965876000000002
 UNEP / Environment Fund,grant,both,finance_policy,10.947519000000002
 Switzerland / Swiss Agency for Development and Co-operation,grant,both,water,10.858381600000001
 France / CIRAD,grant,mitigation,agriculture_land_use,10.848797600000001
-European Bank for Reconstruction and Development ,other,both,agriculture_land_use,10.824
-Austria / Austrian Development Bank,debt,mitigation,water,10.8131488
 Germany / Federal Ministry for Economic Cooperation and Development,equity,both,agriculture_land_use,10.8131488
+Austria / Austrian Development Bank,debt,mitigation,water,10.8131488
 Norway / Norwegian Agency for Development Co-operation,grant,mitigation,transport,10.773401400000001
 Canada / Environment and Climate Change Canada,grant,both,finance_policy,10.7622134
 Dutch Postcode Lottery,grant,adaptation,transport,10.7505496
 "United Kingdom / Department for Culture, Media and Sports",grant,both,other,10.6726532
 Norway / Ministry of Foreign Affairs,grant,adaptation,energy,10.649055
 Japan / Ministry of Foreign Affairs,grant,both,finance_policy,10.6237312
-European Investment Bank,equity,adaptation,other,10.53
 Nordic Development Fund,grant,both,energy,10.5
 Korea / Miscellaneous,grant,both,other,10.472797000000002
 Children's Investment Fund Foundation,grant,mitigation,industry_mining,10.3952
@@ -856,13 +761,13 @@ Belgium / Directorate General for Co-operation and Development,grant,adaptation,
 Switzerland / State Secretariat for Economic Affairs,grant,both,water,10.080396799999999
 Global Environment Facility / GEF Trust Fund,debt,mitigation,transport,10.05
 Private Infrastructure Development Group / GAP,grant,mitigation,transport,10.048632
-Global Environment Facility / Least Developed Countries Trust Fund (LDCF),grant,both,agriculture_land_use,10.0
-World Bank (IBRD/IDA),other,adaptation,energy,10.0
 Global Environment Facility / Least Developed Countries Trust Fund (LDCF),grant,adaptation,transport,10.0
-World Bank (IBRD/IDA),grant,mitigation,industry_mining,10.0
-Adaptation Fund,grant,adaptation,transport,10.0
-World Bank (IBRD/IDA),other,both,education,10.0
+World Bank (IBRD/IDA),other,adaptation,energy,10.0
+Global Environment Facility / Least Developed Countries Trust Fund (LDCF),grant,both,agriculture_land_use,10.0
 Nordic Development Fund,equity,mitigation,energy,10.0
+World Bank (IBRD/IDA),other,both,education,10.0
+Adaptation Fund,grant,adaptation,transport,10.0
+World Bank (IBRD/IDA),grant,mitigation,industry_mining,10.0
 Denmark / Ministry of Foreign Affairs,grant,adaptation,industry_mining,9.809172799999999
 Private Infrastructure Development Group / InfraCo Asia,equity,mitigation,energy,9.8
 Germany / Federal Ministry of Food and Agriculture,grant,both,agriculture_land_use,9.7409476
@@ -880,7 +785,6 @@ Food and Agriculture Organisation / Core resources - developmental,grant,both,tr
 Austria / Austrian Development Agency,grant,both,transport,9.2189248
 New Zealand / Ministry of Foreign Affairs and Trade,grant,mitigation,buildings,9.071118
 Australia / Australian Government,grant,mitigation,finance_policy,9.0701008
-Asian Development Bank,grant,both,industry_mining,9.02303686
 Switzerland / State Secretariat for Economic Affairs,grant,both,other,8.9968948
 John D. and Catherine T. MacArthur Foundation / John & Catherine MacArthur Foundation,grant,mitigation,energy,8.974
 Denmark / Ministry of Foreign Affairs,grant,mitigation,finance_policy,8.8436524
@@ -888,8 +792,8 @@ People's Postcode Lottery,grant,both,other,8.7358104
 Laudes Foundation,grant,mitigation,transport,8.720670199999999
 Norway / NORFUND,equity,adaptation,energy,8.7198712
 Global Environment Facility / GEF Trust Fund,grant,adaptation,industry_mining,8.7060916
-Council of Europe Development Bank / Council of Europe Development Bank (CEB),debt,mitigation,buildings,8.6523904
 Italy / Cassa Depositi e Prestiti,debt,mitigation,industry_mining,8.6523904
+Council of Europe Development Bank / Council of Europe Development Bank (CEB),debt,mitigation,buildings,8.6523904
 Netherlands / Ministry of Foreign Affairs of the Netherlands,grant,both,health,8.55109
 Finland / FinnFund,debt,mitigation,finance_policy,8.4904028
 Germany / Deutsche Investitions- und Entwicklungsgesellschaft mbH (German Investment and Development Company),equity,mitigation,finance_policy,8.433076400000001
@@ -898,7 +802,6 @@ Canada / Global Affairs Canada,grant,adaptation,industry_mining,8.332181
 Italy / Agenzia italiana per la cooperazione allo sviluppo,grant,both,finance_policy,8.2768982
 Norway / NORFUND,debt,mitigation,finance_policy,8.2672096
 Finland / Ministry of Foreign Affairs,grant,adaptation,finance_policy,8.263290399999999
-Asian Development Bank,grant,adaptation,transport,8.19
 Austria / Austrian Development Agency,grant,adaptation,energy,8.1561752
 Gates Foundation / Bill & Melinda Gates Foundation,grant,adaptation,finance_policy,8.150722
 David and Lucile Packard Foundation / David & Lucile Packard Foundation,grant,mitigation,energy,8.1
@@ -1011,23 +914,22 @@ New Zealand / Ministry of Foreign Affairs and Trade,grant,both,water,5.556043
 Ireland / Department of Foreign Affairs,grant,both,energy,5.547557
 Norway / Ministry of Foreign Affairs,grant,adaptation,transport,5.5128862
 UNFPA,grant,adaptation,other,5.466972
-"Ireland / Department of Agriculture, Food and the Marine",grant,adaptation,other,5.407744
 France / French Development Agency,debt,mitigation,industry_mining,5.407744
 Nordic Development Fund,grant,adaptation,transport,5.407744
+"Ireland / Department of Agriculture, Food and the Marine",grant,adaptation,other,5.407744
+Nordic Development Fund,grant,both,finance_policy,5.406574
 Ireland / Miscellaneous,grant,adaptation,other,5.406574
 "Ireland / Department of Agriculture, Food and the Marine",grant,both,finance_policy,5.406574
 Nordic Development Fund,grant,both,other,5.406574
-Nordic Development Fund,grant,both,finance_policy,5.406574
 United Kingdom / Department for Environment Food and Rural Affairs,grant,both,education,5.4043814
 Gates Foundation / Bill & Melinda Gates Foundation,grant,adaptation,other,5.389352000000001
 Nordic Development Fund,grant,mitigation,energy,5.325
 "United Kingdom / Foreign, Commonwealth and Development Office",grant,mitigation,education,5.2924847999999995
-Inter American Development Bank,other,mitigation,industry_mining,5.26
 Lithuania / Ministry of Environment,grant,mitigation,energy,5.231021
 Korea / Miscellaneous,grant,both,transport,5.2299414
 Finland / FinnFund,debt,adaptation,finance_policy,5.2052596
-Belgium / Directorate General for Co-operation and Development,debt,adaptation,water,5.1903116
 Germany / Federal Ministry for Economic Cooperation and Development,equity,both,transport,5.1903116
+Belgium / Directorate General for Co-operation and Development,debt,adaptation,water,5.1903116
 Ireland / Department of Foreign Affairs,grant,both,transport,5.169385200000001
 Canada / Environment and Climate Change Canada,grant,adaptation,buildings,5.154281
 Canada / International Development Research Centre,grant,both,health,5.129542
@@ -1035,14 +937,14 @@ Global Environment Facility / Special Climate Change Trust Fund (SCCF),grant,ada
 Global Environment Facility / GEF Trust Fund,equity,both,industry_mining,5.1
 Switzerland / Swiss Agency for Development and Co-operation,grant,both,industry_mining,5.083373
 CGIAR,grant,mitigation,agriculture_land_use,5.0813392
-Asian Development Bank,debt,mitigation,health,5.08
 Korea / Miscellaneous,grant,mitigation,buildings,5.0197008
 Global Environment Facility / Least Developed Countries Trust Fund (LDCF),grant,adaptation,agriculture_land_use,5.0
 Bezos Earth Fund,grant,mitigation,other,5.0
 John D. and Catherine T. MacArthur Foundation / John & Catherine MacArthur Foundation,grant,mitigation,agriculture_land_use,5.0
 Ford Foundation,grant,adaptation,finance_policy,4.96352
-Global Environment Facility / GEF Trust Fund,equity,both,finance_policy,4.95
+Inter-American Development Bank,other,mitigation,industry_mining,4.96
 Global Environment Facility / GEF Trust Fund,equity,both,energy,4.95
+Global Environment Facility / GEF Trust Fund,equity,both,finance_policy,4.95
 Italy / Agenzia italiana per la cooperazione allo sviluppo,grant,adaptation,water,4.9488562
 Korea / Korea International Cooperation Agency,grant,adaptation,energy,4.9396544
 Japan / Japanese International Co-operation Agency,grant,mitigation,buildings,4.9388119999999995
@@ -1078,7 +980,6 @@ Austria / Federal Ministry of Finance,grant,both,transport,4.43435
 Ireland / Department of Foreign Affairs,grant,both,buildings,4.4296218
 Global Environment Facility / GEF Trust Fund,debt,mitigation,finance_policy,4.410432
 Australia / Australian Government,grant,mitigation,education,4.352366
-Asian Development Bank,grant,mitigation,other,4.3500000000000005
 Norway / Ministry of Foreign Affairs,grant,mitigation,agriculture_land_use,4.349825
 Switzerland / Swiss Agency for Development and Co-operation,grant,adaptation,industry_mining,4.3379684
 Italy / Ministry of Economy and Finance,grant,mitigation,energy,4.3261952
@@ -1104,7 +1005,7 @@ United Kingdom / British International Investment,debt,adaptation,buildings,4.01
 United States / International Development Finance Corporation,equity,both,transport,4.0
 Korea / Korea International Cooperation Agency,grant,mitigation,education,4.0
 Private Infrastructure Development Group / InfraCo Asia,equity,mitigation,transport,4.0
-Inter American Development Bank,other,both,waste,4.0
+Inter-American Development Bank,other,both,waste,4.0
 Italy / Agenzia italiana per la cooperazione allo sviluppo,grant,adaptation,finance_policy,3.9902138000000003
 Finland / Ministry of Foreign Affairs,grant,adaptation,other,3.9656966000000002
 Austria / Austrian Development Bank,debt,adaptation,transport,3.9600000000000004
@@ -1178,11 +1079,10 @@ United States / Agency for International Development,grant,adaptation,industry_m
 IKEA Foundation,grant,adaptation,other,3.0279624000000003
 United Kingdom / Conflict stability and security fund,grant,adaptation,other,3.0180066
 Sweden / Ministry of Foreign Affairs,grant,both,transport,3.0066002000000003
-Australia / Australian Government,equity,both,energy,3.0
-African Development Bank,other,adaptation,industry_mining,3.0
 Global Environment Facility / Special Climate Change Trust Fund (SCCF),grant,adaptation,water,3.0
-Global Environment Facility / Special Climate Change Trust Fund (SCCF),grant,both,agriculture_land_use,3.0
+Australia / Australian Government,equity,both,energy,3.0
 Global Environment Facility / GEF Trust Fund,debt,both,other,3.0
+Global Environment Facility / Special Climate Change Trust Fund (SCCF),grant,both,agriculture_land_use,3.0
 France / Ministry of Foreign Affairs,grant,mitigation,other,2.990989
 Spain / Spanish Agency for International Development Co-operation,grant,mitigation,transport,2.9705146
 Canada / International Development Research Centre,grant,adaptation,transport,2.9672626
@@ -1241,7 +1141,6 @@ Iceland / Ministry of Foreign Affairs,grant,both,energy,2.4988606
 "Germany / Federal Ministry for the Enviroment, Nature Conservation, Nuclear Safety and Consumer Protection",grant,both,other,2.4938124000000004
 Japan / Japanese International Co-operation Agency,grant,both,water,2.4852928
 United Kingdom / Department of Health  and Social Care,grant,mitigation,energy,2.4707234
-Asian Development Bank,equity,mitigation,transport,2.4624061900000003
 Norway / Ministry of Foreign Affairs,grant,adaptation,education,2.462238
 Fondation Botnar / Botnar Foundation,grant,adaptation,buildings,2.4487176
 Japan / Japanese International Co-operation Agency,grant,both,transport,2.4465464
@@ -1270,12 +1169,9 @@ Belgium / Flanders Official Regional Ministries,grant,adaptation,transport,2.311
 Ireland / Department of Foreign Affairs,grant,both,health,2.3056398000000002
 Belgium / Directorate General for Co-operation and Development,grant,both,waste,2.294451
 Private Infrastructure Development Group / GAP,grant,mitigation,energy,2.28045
-Asian Development Bank,equity,both,agriculture_land_use,2.25
-Asian Development Bank,other,adaptation,other,2.25
 Switzerland / State Secretariat for Economic Affairs,grant,both,transport,2.2395608
 Australia / Australian Government,grant,mitigation,health,2.2259332
 France / Proparco,grant,mitigation,industry_mining,2.223048
-Asian Development Bank,debt,mitigation,education,2.223
 Belgium / Directorate General for Co-operation and Development,grant,adaptation,education,2.2188104
 Sweden / Swedish International Development Authority,grant,adaptation,education,2.2117218
 People's Postcode Lottery,grant,both,finance_policy,2.2070816
@@ -1313,11 +1209,10 @@ Japan / Japanese International Co-operation Agency,grant,adaptation,buildings,2.
 France / Ministry of Foreign Affairs,grant,both,transport,2.0348004
 "Austria / Federal Ministry of Climate Action, Environment, Energy, Mobility, Innovation and Technology",grant,mitigation,finance_policy,2.03157
 Switzerland / Swiss Agency for Development and Co-operation,grant,mitigation,industry_mining,2.026444
-Hungary / Hungarian Export Import Bank PLC,debt,mitigation,water,2.0
-William and Flora Hewlett Foundation / William & Flora Hewlett Foundation,grant,adaptation,energy,2.0
 John D. and Catherine T. MacArthur Foundation / John & Catherine MacArthur Foundation,debt,adaptation,transport,2.0
+William and Flora Hewlett Foundation / William & Flora Hewlett Foundation,grant,adaptation,energy,2.0
+Hungary / Hungarian Export Import Bank PLC,debt,mitigation,water,2.0
 Joint Sustainable Development Goals Fund,grant,mitigation,energy,1.999952
-Asian Development Bank,grant,adaptation,industry_mining,1.9980000000000002
 Austria / Austrian Development Agency,grant,both,other,1.9918902
 France / COOP DECENTRAL/MAE,grant,adaptation,water,1.9867572000000002
 Canada / Provincial Governments and municipalities,grant,adaptation,agriculture_land_use,1.9699462
@@ -1326,12 +1221,11 @@ Norway / NORFUND,debt,mitigation,agriculture_land_use,1.956483
 Netherlands / Ministry of Foreign Affairs of the Netherlands,grant,adaptation,education,1.922686
 Italy / Ministry of Environment and Energy Security,grant,adaptation,other,1.918507
 Laudes Foundation,grant,adaptation,other,1.9179212
-Inter American Development Bank,other,adaptation,finance_policy,1.9
 Norway / NORFUND,grant,mitigation,energy,1.8972152000000002
 Ireland / Department of Foreign Affairs,grant,mitigation,energy,1.8966602
 Sweden / Swedish International Development Authority,grant,mitigation,industry_mining,1.8924520000000002
 Dutch Postcode Lottery,grant,adaptation,other,1.892301
-Inter American Development Bank,other,both,industry_mining,1.8825
+Inter-American Development Bank,other,both,industry_mining,1.8825
 Japan / Japanese International Co-operation Agency,grant,mitigation,finance_policy,1.8767506
 France / COOP DECENTRAL/MAE,grant,both,energy,1.8758902
 Germany / Federal Ministry of Education and Research,grant,adaptation,energy,1.873748
@@ -1377,8 +1271,8 @@ United Kingdom / Scottish Government,grant,mitigation,energy,1.6130198
 Austria / Austrian Development Agency,grant,both,finance_policy,1.6019026
 John D. and Catherine T. MacArthur Foundation / John & Catherine MacArthur Foundation,grant,both,finance_policy,1.6
 Australia / Australian Government,equity,mitigation,energy,1.6
-David and Lucile Packard Foundation / David & Lucile Packard Foundation,debt,adaptation,finance_policy,1.6
 UBS Optimus Foundation,grant,adaptation,water,1.6
+David and Lucile Packard Foundation / David & Lucile Packard Foundation,debt,adaptation,finance_policy,1.6
 Japan / Ministry of Foreign Affairs,grant,both,other,1.5959012000000001
 Sweden / Swedish International Development Authority,grant,adaptation,health,1.5896588
 Germany / Federal Ministry of Education and Research,grant,adaptation,other,1.5884592
@@ -1426,7 +1320,6 @@ United Kingdom / Conflict stability and security fund,grant,both,transport,1.359
 Finland / Ministry of Foreign Affairs,grant,mitigation,waste,1.3556042000000001
 Portugal / Portuguese Government,grant,adaptation,water,1.351702
 Czechia / Ministry of Foreign Affairs,grant,mitigation,energy,1.3503608
-Asian Development Bank,equity,mitigation,agriculture_land_use,1.35
 Food and Agriculture Organisation / Core resources - developmental,grant,adaptation,transport,1.3474728
 Czechia / Czech Development Agency,grant,both,water,1.3466732
 Korea / Korea International Cooperation Agency,grant,both,industry_mining,1.3460219999999998
@@ -1436,7 +1329,6 @@ Korea / Ministry of Foreign Affairs and Trade,grant,adaptation,other,1.3344
 Korea / Ministry of Foreign Affairs and Trade,grant,adaptation,agriculture_land_use,1.3344
 Spain / Spanish Agency for International Development Co-operation,grant,adaptation,transport,1.3303060000000002
 Gordon and Betty Moore Foundation,grant,adaptation,water,1.3200000000000003
-Asian Development Bank,grant,mitigation,industry_mining,1.32
 Dutch Postcode Lottery,grant,adaptation,water,1.3193552000000002
 United States / Trade and Development Agency,grant,mitigation,transport,1.314859
 United States / Environmental Protection Agency,grant,mitigation,transport,1.311896
@@ -1444,8 +1336,8 @@ Japan / Japanese International Co-operation Agency,grant,both,finance_policy,1.3
 Global Environment Facility / Global Biodiversity Framework Fund (GBFF),grant,both,finance_policy,1.3041600000000002
 "United Kingdom / Department for Culture, Media and Sports",grant,adaptation,buildings,1.3021196
 Germany / Federal Foreign Office,grant,both,buildings,1.3019032000000001
-Global Environment Facility / GEF Trust Fund,debt,adaptation,finance_policy,1.3008600000000001
 Global Environment Facility / GEF Trust Fund,debt,adaptation,agriculture_land_use,1.3008600000000001
+Global Environment Facility / GEF Trust Fund,debt,adaptation,finance_policy,1.3008600000000001
 Margaret A. Cargill Foundation,grant,adaptation,other,1.3
 "United Kingdom / Department for Business, Innovation and Skills",grant,adaptation,transport,1.2981958
 Council of Europe Development Bank / Council of Europe Development Bank (CEB),debt,mitigation,finance_policy,1.2978584
@@ -1455,7 +1347,6 @@ France / Ministry of Foreign Affairs,grant,adaptation,education,1.288362
 Open Society Foundations,grant,adaptation,energy,1.270001
 Sweden / Ministry of Foreign Affairs,grant,mitigation,finance_policy,1.2540166
 Austria / Federal Ministry of Finance,grant,mitigation,transport,1.2502682
-Asian Development Bank,grant,mitigation,agriculture_land_use,1.25
 People's Postcode Lottery,grant,adaptation,agriculture_land_use,1.243008
 "United Kingdom / Department for Culture, Media and Sports",grant,both,buildings,1.239872
 United States / International Development Finance Corporation,grant,mitigation,energy,1.2394492
@@ -1474,7 +1365,6 @@ Japan / Other Ministries,grant,adaptation,waste,1.187486
 David and Lucile Packard Foundation / David & Lucile Packard Foundation,grant,both,buildings,1.185
 United Kingdom / Department for Environment Food and Rural Affairs,grant,mitigation,education,1.183752
 France / IRD,grant,adaptation,health,1.1684236
-Asian Development Bank,other,adaptation,agriculture_land_use,1.167
 John D. and Catherine T. MacArthur Foundation / John & Catherine MacArthur Foundation,grant,mitigation,transport,1.1600000000000001
 Spain / Spanish Agency for International Development Co-operation,grant,mitigation,waste,1.1528494
 France / MINEFI/NATEXIS,grant,mitigation,other,1.1473806
@@ -1505,7 +1395,6 @@ Germany / Free State of Bavaria,grant,adaptation,agriculture_land_use,1.0519314
 Japan / Japanese International Co-operation Agency,grant,adaptation,education,1.0515546
 Spain / Spanish Agency for International Development Co-operation,grant,mitigation,education,1.0514316000000001
 Canada / Environment and Climate Change Canada,grant,both,transport,1.0512442
-Asian Development Bank,equity,adaptation,other,1.034
 Japan / Japanese International Co-operation Agency,grant,adaptation,industry_mining,1.0333908
 Sweden / Swedish International Development Authority,grant,both,health,1.0266161999999999
 Switzerland / Cantons and municipalities,grant,both,agriculture_land_use,1.0214902000000001
@@ -1516,7 +1405,6 @@ France / Miscellaneous,grant,mitigation,energy,1.011554
 Norway / Norwegian Agency for Development Co-operation,grant,both,education,1.0114156
 Canada / Environment and Climate Change Canada,grant,adaptation,other,1.010345
 WTO - International Trade Centre / VC unearmarked,grant,mitigation,transport,1.0032052
-Asian Development Bank,grant,adaptation,education,1.0
 William and Flora Hewlett Foundation / William & Flora Hewlett Foundation,grant,both,education,1.0
 Nordic Development Fund,grant,adaptation,finance_policy,1.0
 France / MIN/EQUIPEMENT,grant,mitigation,water,0.9883400000000001
@@ -1536,7 +1424,6 @@ Germany / Federal Foreign Office,grant,mitigation,buildings,0.940947
 Germany / Federal Foreign Office,grant,mitigation,industry_mining,0.940847
 Good Ventures Foundation,grant,adaptation,other,0.9353600000000001
 Sweden / Miscellaneous,grant,mitigation,transport,0.9348580000000001
-Asian Development Bank,grant,mitigation,health,0.915675
 United Kingdom / Department for Environment Food and Rural Affairs,grant,adaptation,education,0.9144566000000001
 Austria / Austrian Development Agency,grant,both,agriculture_land_use,0.9062988000000001
 Korea / Miscellaneous,grant,mitigation,water,0.9059092
@@ -1602,7 +1489,6 @@ Arab Fund (AFESD) / Arab Fund,grant,both,water,0.7251604
 David and Lucile Packard Foundation / David & Lucile Packard Foundation,equity,adaptation,finance_policy,0.7250736
 Australia / Australian Government,grant,adaptation,industry_mining,0.7248668
 IKEA Foundation,grant,adaptation,finance_policy,0.7214464
-Asian Development Bank,grant,adaptation,health,0.72
 Germany / Land Baden-Württemberg,grant,adaptation,health,0.7177156
 Arab Fund (AFESD) / Arab Fund,grant,both,finance_policy,0.7173348
 Good Ventures Foundation,grant,adaptation,transport,0.716
@@ -1686,7 +1572,7 @@ Sweden / Ministry of Foreign Affairs,grant,adaptation,finance_policy,0.555428800
 "Japan / Ministry of Agriculture, Forestry and Fisheries",grant,both,buildings,0.55497
 "Austria / Federal Ministry of Climate Action, Environment, Energy, Mobility, Innovation and Technology",grant,both,transport,0.554241
 Korea / Miscellaneous,grant,adaptation,energy,0.5510164000000001
-Inter American Development Bank,other,adaptation,industry_mining,0.5499999999999999
+Inter-American Development Bank,other,adaptation,industry_mining,0.5499999999999999
 Germany / Federal Foreign Office,grant,adaptation,education,0.5498536
 Canada / Miscellaneous,grant,both,other,0.5498166
 Korea / Ministry of Strategy and Finance,grant,adaptation,transport,0.5496934
@@ -1705,6 +1591,7 @@ Spain / Comunidad Autónoma de Extremadura,grant,both,water,0.537413
 Poland / Ministry of Foreign Affairs,grant,both,energy,0.5371722
 "France / Ministry of Education, Higher education and Research",grant,adaptation,health,0.5343048
 Czechia / Czech Development Agency,grant,adaptation,water,0.5323616
+Inter-American Development Bank,other,adaptation,finance_policy,0.53
 United Kingdom / Scottish Government,grant,both,water,0.5273888
 Food and Agriculture Organisation / Core resources - developmental,grant,mitigation,other,0.52458
 Finland / FinnFund,debt,adaptation,agriculture_land_use,0.520474
@@ -1764,18 +1651,18 @@ Germany / Federal Foreign Office,grant,both,energy,0.44653960000000004
 "Austria / Provincial governments, local communities",grant,mitigation,energy,0.4436876
 "France / Ministry of Economy, Finance and Industry",grant,both,other,0.44343460000000007
 New Zealand / Ministry of Foreign Affairs and Trade,grant,mitigation,energy,0.4417366
-"Canada / Immigration, Refugees and Citizenship Canada",grant,adaptation,agriculture_land_use,0.4379564
 Canada / FinDev Canada,debt,mitigation,agriculture_land_use,0.4379564
+"Canada / Immigration, Refugees and Citizenship Canada",grant,adaptation,agriculture_land_use,0.4379564
 Switzerland / Cantons and municipalities,grant,adaptation,water,0.4360292
 Czechia / Czech Development Agency,grant,both,energy,0.434441
 Sweden / SwedFund,grant,adaptation,water,0.43383520000000003
 Germany / Federal Ministry of Food and Agriculture,grant,mitigation,other,0.4335432
 Spain / Municipalities,grant,both,energy,0.43326800000000004
-Austria / Federal Ministry of Finance,grant,adaptation,water,0.43261960000000005
 Finland / Ministry of Foreign Affairs,grant,both,waste,0.43261960000000005
+Austria / Federal Ministry of Finance,grant,adaptation,water,0.43261960000000005
 Spain / Comunidad Valenciana,grant,both,transport,0.432526
-France / Proparco,grant,adaptation,other,0.43252560000000007
 Italy / Agenzia italiana per la cooperazione allo sviluppo,grant,mitigation,finance_policy,0.43252560000000007
+France / Proparco,grant,adaptation,other,0.43252560000000007
 Spain / Comunidad Autónoma de Andalucía,grant,both,energy,0.432016
 "Austria / Federal Ministry of Climate Action, Environment, Energy, Mobility, Innovation and Technology",grant,adaptation,transport,0.430951
 Belgium / Flanders Official Regional Ministries,grant,adaptation,education,0.42900099999999997
@@ -1842,7 +1729,6 @@ Germany / Free State of Bavaria,grant,adaptation,other,0.34990400000000005
 Poland / Ministry of Foreign Affairs,grant,both,agriculture_land_use,0.3464372
 Germany / Free State of Bavaria,grant,both,health,0.3460204
 Spain / Municipalities,grant,mitigation,buildings,0.3458094
-Asian Development Bank,equity,mitigation,industry_mining,0.34578082
 Portugal / Camões-Institute for Cooperation and Language,grant,both,buildings,0.3453224
 Sweden / Ministry of Foreign Affairs,grant,adaptation,water,0.344696
 Italy / Earmarked fiscal flows to NGOs & religious organisations,grant,both,education,0.3411268
@@ -1882,12 +1768,10 @@ United Kingdom / Conflict stability and security fund,grant,both,finance_policy,
 Food and Agriculture Organisation / Core resources - developmental,grant,adaptation,water,0.3031064
 Sweden / SwedFund,grant,mitigation,other,0.3027924
 Austria / Austrian Development Agency,grant,mitigation,transport,0.30073180000000005
-Ford Foundation,grant,both,energy,0.30000000000000004
-Asian Development Bank,grant,mitigation,water,0.30000000000000004
 Central Emergency Response Fund / Under Funded,grant,adaptation,health,0.30000000000000004
-Asian Development Bank,grant,mitigation,education,0.3
-Fondation Botnar / Botnar Foundation,equity,mitigation,transport,0.3
+Ford Foundation,grant,both,energy,0.30000000000000004
 Oak Foundation,grant,adaptation,education,0.3
+Fondation Botnar / Botnar Foundation,equity,mitigation,transport,0.3
 Korea / Ministry of Foreign Affairs and Trade,grant,adaptation,finance_policy,0.3
 Sweden / Swedish International Development Authority,grant,both,buildings,0.2997618
 Portugal / Camões-Institute for Cooperation and Language,grant,both,water,0.2995428
@@ -1952,9 +1836,9 @@ Italy / Agenzia italiana per la cooperazione allo sviluppo,grant,both,education,
 Czechia / Ministry of Interior,grant,adaptation,other,0.2526696
 Spain / Municipalities,grant,adaptation,water,0.2526146
 Canada / Provincial Governments and municipalities,grant,adaptation,finance_policy,0.25006300000000004
-Global Environment Facility / Special Climate Change Trust Fund (SCCF),grant,adaptation,finance_policy,0.25
-Joint Sustainable Development Goals Fund,grant,adaptation,industry_mining,0.25
 Fondation Botnar / Botnar Foundation,equity,mitigation,other,0.25
+Joint Sustainable Development Goals Fund,grant,adaptation,industry_mining,0.25
+Global Environment Facility / Special Climate Change Trust Fund (SCCF),grant,adaptation,finance_policy,0.25
 Joint Sustainable Development Goals Fund,grant,adaptation,transport,0.249999
 Joint Sustainable Development Goals Fund,grant,adaptation,buildings,0.249919
 Portugal / Portuguese Government,grant,mitigation,energy,0.249104
@@ -1974,7 +1858,6 @@ Sweden / SwedFund,grant,mitigation,water,0.22709440000000003
 Germany / Land Baden-Württemberg,grant,both,education,0.2265638
 Slovenia / Ministry of Foreign and European Affairs,grant,both,agriculture_land_use,0.2263612
 "Slovenia / Ministry of the Environment, Climate and Energy",grant,mitigation,water,0.2251848
-Asian Development Bank,other,adaptation,education,0.225
 Germany / Free State of Bavaria,grant,both,water,0.22369840000000002
 Luxembourg / Ministry of Foreign and European Affairs,grant,mitigation,transport,0.22227360000000002
 Italy / Local administration - Regions and autonomous provinces,grant,adaptation,water,0.222216
@@ -1984,8 +1867,8 @@ William and Flora Hewlett Foundation / William & Flora Hewlett Foundation,grant,
 Portugal / Camões-Institute for Cooperation and Language,grant,mitigation,energy,0.218341
 Norway / Norwegian Agency for Exchange Cooperation,grant,mitigation,finance_policy,0.217418
 France / MIN/EQUIPEMENT,grant,both,transport,0.21630960000000002
-Austria / Austrian Development Bank,grant,mitigation,energy,0.216263
 Spain / Comunidad Autónoma de las Illes Balears,grant,both,transport,0.216263
+Austria / Austrian Development Bank,grant,mitigation,energy,0.216263
 Spain / Ministry of the Environment and Rural and Marine Environs,grant,mitigation,finance_policy,0.216262
 Laudes Foundation,grant,mitigation,agriculture_land_use,0.216262
 Germany / Land Schleswig-Holstein,grant,mitigation,energy,0.2154692
@@ -2008,11 +1891,9 @@ Netherlands / Ministry of Foreign Affairs of the Netherlands,grant,mitigation,he
 Food and Agriculture Organisation / Core resources - developmental,grant,both,education,0.20595960000000002
 Ireland / Department of Foreign Affairs,grant,mitigation,finance_policy,0.2055828
 Austria / Various ministries,grant,adaptation,energy,0.2054944
-Monaco / Government of Monaco,grant,both,other,0.205494
 Estonia / Other Ministries,grant,both,agriculture_land_use,0.205494
+Monaco / Government of Monaco,grant,both,other,0.205494
 Spain / Municipalities,grant,both,health,0.205164
-Asian Development Bank,other,adaptation,water,0.205
-Asian Development Bank,other,adaptation,energy,0.205
 UBS Optimus Foundation,grant,mitigation,finance_policy,0.204953
 United States / African Development Foundation,grant,mitigation,energy,0.204534
 France / Ministry of Foreign Affairs,grant,adaptation,agriculture_land_use,0.2040246
@@ -2024,8 +1905,8 @@ Liechtenstein / Ministry of Foreign Affairs,grant,adaptation,buildings,0.203191
 Slovenia / Ministry of Finance,grant,both,other,0.2022344
 Spain / Public Universities,grant,both,education,0.2011578
 Spain / Comunidad Autónoma de Galicia,grant,both,buildings,0.200087
-John D. and Catherine T. MacArthur Foundation / John & Catherine MacArthur Foundation,grant,adaptation,finance_policy,0.2
 William and Flora Hewlett Foundation / William & Flora Hewlett Foundation,grant,adaptation,other,0.2
+John D. and Catherine T. MacArthur Foundation / John & Catherine MacArthur Foundation,grant,adaptation,finance_policy,0.2
 Czechia / Ministry of Foreign Affairs,grant,adaptation,buildings,0.1995404
 Monaco / Government of Monaco,grant,adaptation,other,0.1990016
 Iceland / Ministry of Finance,grant,both,other,0.19849840000000002
@@ -2229,9 +2110,9 @@ Germany / Free and Hanseatic City of Hamburg,grant,mitigation,water,0.1014292
 Hungary / Miscellaneous,grant,both,transport,0.10090640000000001
 Italy / Ministry of Environment and Energy Security,grant,both,water,0.100314
 Spain / Comunidad Autónoma de Galicia,grant,both,other,0.100022
+United States / Environmental Protection Agency,grant,mitigation,energy,0.1
 Ford Foundation,grant,both,transport,0.1
 United States / Department of Commerce,grant,adaptation,transport,0.1
-United States / Environmental Protection Agency,grant,mitigation,energy,0.1
 "United Kingdom / Department for Business, Innovation and Skills",grant,mitigation,finance_policy,0.09952520000000001
 "Austria / Provincial governments, local communities",grant,mitigation,water,0.0994092
 Latvia / Ministry of Foreign Affairs,grant,mitigation,agriculture_land_use,0.098698
@@ -2269,9 +2150,9 @@ Czechia / Ministry of Foreign Affairs,grant,mitigation,buildings,0.087253
 Italy / Local administration - Regions and autonomous provinces,grant,both,agriculture_land_use,0.086869
 Private Infrastructure Development Group / GAP,grant,adaptation,transport,0.0868
 Laudes Foundation,grant,both,water,0.0865244
-Monaco / Government of Monaco,grant,both,transport,0.086524
-Italy / Ministry of Environment and Energy Security,grant,mitigation,other,0.086524
 Spain / Compañía Española de Financiación del Desarrollo,debt,adaptation,agriculture_land_use,0.086524
+Italy / Ministry of Environment and Energy Security,grant,mitigation,other,0.086524
+Monaco / Government of Monaco,grant,both,transport,0.086524
 Ireland / Miscellaneous,grant,both,finance_policy,0.0865052
 France / MIN/EQUIPEMENT,grant,both,health,0.0865052
 France / Ministry of Foreign Affairs,grant,both,industry_mining,0.086477
@@ -2292,9 +2173,9 @@ Spain / Comunidad Autónoma de La Rioja,grant,adaptation,water,0.083008800000000
 Poland / Ministry of Interior and Administration,grant,adaptation,transport,0.08255000000000001
 Spain / Spanish Agency for International Development Co-operation,grant,adaptation,health,0.08218
 Wellcome Trust,grant,adaptation,buildings,0.0815784
-Spain / Comunidad Autónoma de Castilla-La Mancha,grant,adaptation,agriculture_land_use,0.081116
-Spain / Comunidad Autónoma de Galicia,grant,adaptation,agriculture_land_use,0.081116
 Germany / Free and Hanseatic City of Hamburg,grant,adaptation,water,0.081116
+Spain / Comunidad Autónoma de Galicia,grant,adaptation,agriculture_land_use,0.081116
+Spain / Comunidad Autónoma de Castilla-La Mancha,grant,adaptation,agriculture_land_use,0.081116
 Spain / Comunidad Autónoma de Cataluña,grant,adaptation,finance_policy,0.08102
 Finland / Ministry of Foreign Affairs,grant,both,water,0.08017160000000001
 Spain / Comunidad Autónoma de Galicia,grant,mitigation,energy,0.08001760000000001
@@ -2373,8 +2254,8 @@ Korea / Ministry of Strategy and Finance,grant,both,industry_mining,0.0634120000
 Italy / Local administration - Unspecified,grant,both,water,0.0631902
 United Nations Conference on Trade and Development / United Nations Conference on Trade and Development - Regular budget,grant,both,finance_policy,0.06310120000000001
 France / Ministry of Agriculture,grant,both,agriculture_land_use,0.062838
-Slovenia / Ministry of Foreign and European Affairs,grant,both,water,0.0627164
 Slovenia / Ministry of Foreign and European Affairs,grant,mitigation,transport,0.0627164
+Slovenia / Ministry of Foreign and European Affairs,grant,both,water,0.0627164
 Switzerland / Cantons and municipalities,grant,adaptation,transport,0.062417
 Korea / Ministry of Strategy and Finance,grant,both,energy,0.0615472
 Korea / Ministry of Strategy and Finance,grant,both,agriculture_land_use,0.0615472
@@ -2402,8 +2283,8 @@ Spain / Public Universities,grant,both,other,0.0542242
 United Kingdom / British International Investment,equity,mitigation,transport,0.054209
 France / COOP DECENTRAL/MAE,grant,mitigation,agriculture_land_use,0.054124
 Monaco / Government of Monaco,grant,both,finance_policy,0.054077
-"France / Ministry of Economy, Finance and Industry",grant,both,industry_mining,0.054077
 Italy / Central administration,grant,adaptation,other,0.054077
+"France / Ministry of Economy, Finance and Industry",grant,both,industry_mining,0.054077
 Estonia / Ministry of Foreign Affairs,grant,mitigation,other,0.054066
 Spain / Comunidad de Castilla y León,grant,both,transport,0.054065999999999996
 Spain / Comunidad Autónoma de las Illes Balears,grant,mitigation,agriculture_land_use,0.054065600000000005
@@ -2459,18 +2340,18 @@ Liechtenstein / Ministry of Foreign Affairs,grant,adaptation,energy,0.0441120000
 Sweden / Miscellaneous,grant,mitigation,industry_mining,0.0435264
 Czechia / Ministry of Industry and Trade,grant,mitigation,energy,0.043337
 France / COOP DECENTRAL/MAE,grant,adaptation,buildings,0.043272
-Spain / Public Universities,grant,adaptation,other,0.043262
-Italy / Ministry of Environment and Energy Security,grant,mitigation,finance_policy,0.043262
 Slovak Republic / Slovak Agency for International Deve (SAMRS),grant,both,finance_policy,0.043262
 Slovak Republic / Slovak Agency for International Deve (SAMRS),grant,both,buildings,0.043262
 Estonia / Local Authorites,grant,both,transport,0.043262
+Italy / Ministry of Environment and Energy Security,grant,mitigation,finance_policy,0.043262
 France / MIN/SANTE,grant,mitigation,industry_mining,0.043262
-Spain / Comunidad Autónoma de Andalucía,grant,both,transport,0.0432524
+Spain / Public Universities,grant,adaptation,other,0.043262
 Spain / Comunidad de Madrid,grant,mitigation,agriculture_land_use,0.0432524
-Spain / Comunidad de Madrid,grant,adaptation,water,0.0432524
+Spain / Comunidad de Madrid,grant,both,education,0.0432524
+Spain / Comunidad Autónoma de Andalucía,grant,both,transport,0.0432524
 Italy / Agenzia italiana per la cooperazione allo sviluppo,grant,mitigation,industry_mining,0.0432524
 Spain / Comunidad Autónoma de Extremadura,grant,mitigation,other,0.0432524
-Spain / Comunidad de Madrid,grant,both,education,0.0432524
+Spain / Comunidad de Madrid,grant,adaptation,water,0.0432524
 Japan / Japanese International Co-operation Agency,grant,mitigation,education,0.043092
 Spain / Comunidad Foral de Navarra,grant,mitigation,energy,0.0430884
 Qatar / Qatar University,grant,mitigation,agriculture_land_use,0.04304720000000001
@@ -2491,10 +2372,10 @@ Estonia / Other Public Sector Institutions,grant,both,other,0.0402336
 "Germany / Federal Ministry for the Enviroment, Nature Conservation, Nuclear Safety and Consumer Protection",grant,mitigation,other,0.0401168
 "United Kingdom / Foreign, Commonwealth and Development Office",grant,mitigation,health,0.0400596
 United States / Millennium Challenge Corporation,grant,adaptation,transport,0.04000000000000001
-David and Lucile Packard Foundation / David & Lucile Packard Foundation,grant,mitigation,buildings,0.04000000000000001
 Open Society Foundations,grant,adaptation,water,0.04000000000000001
-David and Lucile Packard Foundation / David & Lucile Packard Foundation,grant,mitigation,water,0.04000000000000001
+David and Lucile Packard Foundation / David & Lucile Packard Foundation,grant,mitigation,buildings,0.04000000000000001
 Open Society Foundations,grant,adaptation,buildings,0.04000000000000001
+David and Lucile Packard Foundation / David & Lucile Packard Foundation,grant,mitigation,water,0.04000000000000001
 Spain / Comunidad Autónoma de Galicia,grant,mitigation,education,0.03995080000000001
 Food and Agriculture Organisation / Core resources - developmental,grant,mitigation,buildings,0.0395336
 France / COOP DECENTRAL/MAE,grant,adaptation,energy,0.03942
@@ -2591,8 +2472,8 @@ Ireland / Department of Foreign Affairs,grant,mitigation,industry_mining,0.02514
 Italy / Ministry of Environment and Energy Security,grant,both,agriculture_land_use,0.025078
 UN Economic and Social Commission for Western Asia / ESCWA - United Nations Economic and Social Commission for Western Asia,grant,adaptation,finance_policy,0.024923
 Germany / Land North Rhine-Westphalia,grant,adaptation,water,0.024484
-Poland / Ministry of Interior and Administration,grant,mitigation,other,0.024311200000000005
 Poland / Ministry of Interior and Administration,grant,mitigation,finance_policy,0.024311200000000005
+Poland / Ministry of Interior and Administration,grant,mitigation,other,0.024311200000000005
 UNDP,grant,adaptation,education,0.024287
 Latvia / Ministry of Foreign Affairs,grant,adaptation,water,0.024006
 Poland / Ministry of Foreign Affairs,grant,adaptation,other,0.0239944
@@ -2608,9 +2489,9 @@ Slovenia / Miscellaneous,grant,both,agriculture_land_use,0.022008800000000002
 "Spain / Ministry of Agriculture, Fisheries, and Food",grant,mitigation,agriculture_land_use,0.021843
 "Germany / Federal Ministry for the Enviroment, Nature Conservation, Nuclear Safety and Consumer Protection",grant,adaptation,education,0.021739
 Germany / Free State of Bavaria,grant,mitigation,water,0.0216304
-Spain / Comunidad de Castilla y León,grant,adaptation,transport,0.021626400000000004
 Latvia / Ministry of Foreign Affairs,grant,adaptation,other,0.021626400000000004
 Estonia / Other Public Sector Institutions,grant,mitigation,transport,0.021626400000000004
+Spain / Comunidad de Castilla y León,grant,adaptation,transport,0.021626400000000004
 Spain / Comunidad Autónoma del País Vasco o de Euskadi,grant,mitigation,transport,0.021626400000000004
 Latvia / Ministry of Foreign Affairs,grant,both,energy,0.021626400000000004
 "France / Ministry of Education, Higher education and Research",grant,both,transport,0.021626
@@ -2651,7 +2532,6 @@ Estonia / Ministry of Foreign Affairs,grant,both,water,0.0181704
 Portugal / Portuguese Government,grant,mitigation,finance_policy,0.0179536
 Estonia / Other Public Sector Institutions,grant,mitigation,energy,0.0177336
 Germany / Federal Foreign Office,grant,both,other,0.017602800000000002
-Asian Development Bank,other,both,agriculture_land_use,0.0175
 Czechia / Czech Development Agency,grant,mitigation,transport,0.0174888
 Italy / Local administration - Municipalities and metropolitan cities,grant,both,transport,0.017304800000000002
 Austria / Austrian Development Bank,grant,both,education,0.017304800000000002
@@ -2690,11 +2570,11 @@ United Kingdom / UK-India Tech Start-up Fund,grant,both,finance_policy,0.0130780
 Germany / Federal Ministry of Education and Research,grant,mitigation,other,0.0130744
 Italy / Local administration - Regions and autonomous provinces,grant,both,health,0.013067600000000002
 Laudes Foundation,grant,adaptation,education,0.012978400000000001
-German Postcode Lottery,grant,adaptation,waste,0.012978400000000001
 German Postcode Lottery,grant,mitigation,agriculture_land_use,0.012978400000000001
+German Postcode Lottery,grant,adaptation,waste,0.012978400000000001
 Italy / Local administration - Unspecified,grant,mitigation,other,0.012976
-Germany / Free State of Bavaria,grant,adaptation,transport,0.012975600000000002
 Germany / Federal Ministry for Digital and Transport,grant,both,finance_policy,0.012975600000000002
+Germany / Free State of Bavaria,grant,adaptation,transport,0.012975600000000002
 Spain / Comunidad Autónoma de la Región de Murcia,grant,both,other,0.012975600000000002
 Luxembourg / Ministry of Foreign and European Affairs,grant,adaptation,finance_policy,0.012830800000000002
 Switzerland / Cantons and municipalities,grant,both,transport,0.0126292
@@ -2703,8 +2583,8 @@ Norway / NORFUND,grant,both,buildings,0.012623599999999999
 Japan / Prefectures,grant,both,water,0.01216
 Sweden / Miscellaneous,grant,mitigation,other,0.0121116
 Germany / Free State of Bavaria,grant,both,buildings,0.0119348
-Japan / Prefectures,grant,both,education,0.011802
 Japan / Prefectures,grant,both,finance_policy,0.011802
+Japan / Prefectures,grant,both,education,0.011802
 Canada / Provincial Governments and municipalities,grant,adaptation,education,0.011754800000000001
 Italy / Local administration - Regions and autonomous provinces,grant,adaptation,education,0.011702
 Italy / Local administration - Unspecified,grant,both,waste,0.0116154
@@ -2714,10 +2594,10 @@ Slovenia / Miscellaneous,grant,adaptation,other,0.0113072
 Italy / Public universities and research institutes and Italian red cross,grant,mitigation,education,0.011248000000000001
 Hungary / Ministry of Energy,grant,both,other,0.010868
 Spain / Public Universities,grant,adaptation,education,0.010815
-Slovenia / Ministry of Defence,grant,adaptation,other,0.010813200000000002
 Spain / Comunidad Autónoma de Aragón,grant,mitigation,education,0.010813200000000002
-Ireland / Department of Foreign Affairs,grant,both,waste,0.010813
+Slovenia / Ministry of Defence,grant,adaptation,other,0.010813200000000002
 Slovak Republic / Slovak Agency for International Deve (SAMRS),grant,both,agriculture_land_use,0.010813
+Ireland / Department of Foreign Affairs,grant,both,waste,0.010813
 Germany / Land Saarland,grant,both,agriculture_land_use,0.010799600000000001
 Lithuania / Ministry of Foreign Affairs,grant,both,energy,0.0107928
 Austria / Austrian Development Bank,grant,mitigation,education,0.010772400000000001
@@ -2749,8 +2629,8 @@ Germany / Land Lower-Saxony,grant,mitigation,other,0.0088972
 "Austria / FM of Education, Science and Research",grant,mitigation,health,0.008878800000000001
 Italy / Local administration - Municipalities and metropolitan cities,grant,mitigation,agriculture_land_use,0.0088468
 Norway / NORFUND,grant,mitigation,agriculture_land_use,0.008694
-"Austria / Provincial governments, local communities",grant,adaptation,education,0.0086504
 Germany / Land Schleswig-Holstein,grant,adaptation,water,0.0086504
+"Austria / Provincial governments, local communities",grant,adaptation,education,0.0086504
 Japan / Prefectures,grant,adaptation,education,0.0086376
 Japan / Prefectures,grant,adaptation,finance_policy,0.0086376
 Czechia / Czech Development Agency,grant,mitigation,buildings,0.008612400000000001
@@ -2835,10 +2715,10 @@ Germany / Land Schleswig-Holstein,grant,adaptation,other,0.0045884
 Lithuania / Ministry of Agriculture,grant,adaptation,other,0.004586
 Czechia / Czech Development Agency,grant,mitigation,water,0.0044328
 "International Centre for Genetic Engineering and Biotechnology / ICGEB Core, developmental",grant,adaptation,agriculture_land_use,0.0044088
-Slovenia / Ministry of Foreign and European Affairs,grant,adaptation,water,0.004326
-Germany / Free Hanseatic City of Bremen,grant,both,transport,0.004326
-Slovak Republic / Slovak Agency for International Deve (SAMRS),grant,mitigation,water,0.004326
 Slovenia / Ministry of Foreign and European Affairs,grant,both,transport,0.004326
+Slovenia / Ministry of Foreign and European Affairs,grant,adaptation,water,0.004326
+Slovak Republic / Slovak Agency for International Deve (SAMRS),grant,mitigation,water,0.004326
+Germany / Free Hanseatic City of Bremen,grant,both,transport,0.004326
 Germany / Land Rhineland-Palatinate,grant,adaptation,energy,0.0043252
 Poland / Ministry of Foreign Affairs,grant,adaptation,agriculture_land_use,0.004306
 "Austria / FM of Education, Science and Research",grant,mitigation,agriculture_land_use,0.0043036
