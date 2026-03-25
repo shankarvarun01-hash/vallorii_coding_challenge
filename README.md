@@ -99,3 +99,61 @@ The climate pipeline writes to `outputs/`:
 - `climate_finance.db` (SQLite database with project and edge tables)
 - `climate_finance_sankey.html` (interactive Sankey flow visualization)
 - `climate_finance_summary.md` (coverage, totals, top actors/sectors, methodology notes)
+
+---
+
+## Manual LinkedIn profile analysis utility
+
+This utility is for analyzing **manually collected** profile records (for example, people listed on an organization page) to summarize:
+
+- Experience years per person
+- Most common education institutions
+- Most common prior organizations
+
+Script:
+
+- `src/linkedin_profile_analysis.py`
+
+### Input format
+
+Use `data/linkedin_profiles_template.csv` and add one row per education or experience record:
+
+- `name`
+- `current_role`
+- `record_type` (`education` or `experience`)
+- `institution`
+- `title`
+- `start_year`
+- `end_year` (`Present` is supported)
+- `source_url`
+- `linkedin_url` (optional; profile link only, if available)
+
+The script also accepts a wide format with columns:
+`education_*` and `experience_*` (single row entries), but the template above is recommended.
+
+### Run
+
+```bash
+python3 src/linkedin_profile_analysis.py --input data/linkedin_profiles_template.csv
+```
+
+Optional arguments:
+
+```bash
+python3 src/linkedin_profile_analysis.py \
+  --input data/linkedin_profiles_template.csv \
+  --outdir outputs/linkedin_profile_analysis \
+  --reference-year 2026 \
+  --top-n 10
+```
+
+### Outputs
+
+Generated files in `outputs/linkedin_profile_analysis/`:
+
+- `linkedin_normalized_records.csv`
+- `linkedin_people_summary.csv`
+- `linkedin_education_distribution.csv`
+- `linkedin_experience_distribution.csv`
+- `linkedin_experience_by_person_org.csv`
+- `linkedin_profile_summary.md`
