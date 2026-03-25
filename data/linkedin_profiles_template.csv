@@ -1,0 +1,7 @@
+name,current_role,record_type,institution,title,start_year,end_year,source_url
+Person A,Research Associate,education,University of Oxford,MSc Public Policy,2018,2019,https://example.com/profile/person-a
+Person A,Research Associate,experience,Organisation X,Policy Analyst,2019,2022,https://example.com/profile/person-a
+Person A,Research Associate,experience,Oxford SDG Impact Lab,Research Associate,2022,Present,https://example.com/profile/person-a
+Person B,Programme Manager,education,University of Cambridge,BA Economics,2012,2015,https://example.com/profile/person-b
+Person B,Programme Manager,experience,Organisation Y,Consultant,2015,2018,https://example.com/profile/person-b
+Person B,Programme Manager,experience,Oxford SDG Impact Lab,Programme Manager,2018,Present,https://example.com/profile/person-b
