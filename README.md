@@ -126,6 +126,7 @@ Use `data/linkedin_profiles_template.csv` and add one row per education or exper
 - `start_year`
 - `end_year` (`Present` is supported)
 - `source_url`
+- `linkedin_url` (optional; profile link only, if available)
 
 The script also accepts a wide format with columns:
 `education_*` and `experience_*` (single row entries), but the template above is recommended.

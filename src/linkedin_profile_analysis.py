@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 
 
-RECOMMENDED_COLUMNS = [
+REQUIRED_COLUMNS = [
     "name",
     "current_role",
     "record_type",
@@ -18,6 +18,8 @@ RECOMMENDED_COLUMNS = [
     "end_year",
     "source_url",
 ]
+OPTIONAL_COLUMNS = ["linkedin_url"]
+NORMALIZED_COLUMNS = REQUIRED_COLUMNS + OPTIONAL_COLUMNS
 
 
 def _normalize_text(series: pd.Series) -> pd.Series:
@@ -39,7 +41,7 @@ def _parse_year_value(value: object, reference_year: int) -> float:
 
 
 def _normalize_recommended(df: pd.DataFrame, reference_year: int) -> pd.DataFrame:
-    expected = set(RECOMMENDED_COLUMNS)
+    expected = set(REQUIRED_COLUMNS)
     missing = sorted(expected - set(df.columns))
     if missing:
         raise ValueError(
@@ -48,7 +50,10 @@ def _normalize_recommended(df: pd.DataFrame, reference_year: int) -> pd.DataFram
         )
 
     normalized = df.copy()
-    for column in ["name", "current_role", "record_type", "institution", "title", "source_url"]:
+    if "linkedin_url" not in normalized.columns:
+        normalized["linkedin_url"] = pd.NA
+
+    for column in ["name", "current_role", "record_type", "institution", "title", "source_url", "linkedin_url"]:
         normalized[column] = _normalize_text(normalized[column])
 
     normalized["record_type"] = normalized["record_type"].str.lower()
@@ -78,9 +83,9 @@ def _normalize_wide(df: pd.DataFrame, reference_year: int) -> pd.DataFrame:
             "Input did not match known wide format. Missing columns: " + ", ".join(missing)
         )
 
-    edu = working[
-        ["name", "current_role", "source_url", "education_school", "education_degree", "education_start_year", "education_end_year"]
-    ].rename(
+    shared_cols = ["name", "current_role", "source_url"] + (["linkedin_url"] if "linkedin_url" in working.columns else [])
+
+    edu = working[shared_cols + ["education_school", "education_degree", "education_start_year", "education_end_year"]].rename(
         columns={
             "education_school": "institution",
             "education_degree": "title",
@@ -90,9 +95,7 @@ def _normalize_wide(df: pd.DataFrame, reference_year: int) -> pd.DataFrame:
     )
     edu["record_type"] = "education"
 
-    exp = working[
-        ["name", "current_role", "source_url", "experience_org", "experience_role", "experience_start_year", "experience_end_year"]
-    ].rename(
+    exp = working[shared_cols + ["experience_org", "experience_role", "experience_start_year", "experience_end_year"]].rename(
         columns={
             "experience_org": "institution",
             "experience_role": "title",
@@ -103,6 +106,8 @@ def _normalize_wide(df: pd.DataFrame, reference_year: int) -> pd.DataFrame:
     exp["record_type"] = "experience"
 
     normalized = pd.concat([edu, exp], ignore_index=True)
+    if "linkedin_url" not in normalized.columns:
+        normalized["linkedin_url"] = pd.NA
     normalized["start_year"] = normalized["start_year"].apply(_parse_year_value, reference_year=reference_year)
     normalized["end_year"] = normalized["end_year"].apply(_parse_year_value, reference_year=reference_year)
     return normalized
@@ -115,7 +120,7 @@ def load_profiles(path: Path, reference_year: int) -> pd.DataFrame:
     else:
         normalized = _normalize_wide(df, reference_year=reference_year)
 
-    normalized = normalized[RECOMMENDED_COLUMNS].copy()
+    normalized = normalized[NORMALIZED_COLUMNS].copy()
     normalized["name"] = _normalize_text(normalized["name"])
     normalized = normalized.dropna(subset=["name", "record_type"])
     normalized["record_type"] = normalized["record_type"].str.lower()
@@ -124,6 +129,7 @@ def load_profiles(path: Path, reference_year: int) -> pd.DataFrame:
     normalized["title"] = _normalize_text(normalized["title"])
     normalized["current_role"] = _normalize_text(normalized["current_role"])
     normalized["source_url"] = _normalize_text(normalized["source_url"])
+    normalized["linkedin_url"] = _normalize_text(normalized["linkedin_url"])
     normalized["record_duration_years"] = np.where(
         normalized["start_year"].notna() & normalized["end_year"].notna(),
         (normalized["end_year"] - normalized["start_year"]).clip(lower=0.0),
@@ -154,7 +160,7 @@ def build_people_summary(records: pd.DataFrame) -> pd.DataFrame:
         .reset_index()
     )
     roles = (
-        records[["name", "current_role"]]
+        records[["name", "current_role", "linkedin_url"]]
         .dropna(subset=["name"])
         .drop_duplicates(subset=["name"], keep="first")
     )
